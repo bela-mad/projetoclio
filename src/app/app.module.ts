@@ -15,7 +15,7 @@ import { ModeracaoAvaliacoesComponent } from './area-logada/admin/moderacao-aval
 import { PerfilVisitanteComponent } from './area-logada/perfis/perfil-visitante/perfil-visitante.component';
 import { TermosCondicoesComponent } from './core/termos-condicoes/termos-condicoes.component';
 @NgModule({
-  declarations: [		
+  declarations: [			
     AppComponent,
       NavBarComponent,
       FooterComponent,
@@ -27,7 +27,7 @@ import { TermosCondicoesComponent } from './core/termos-condicoes/termos-condico
       ModeracaoAvaliacoesComponent,
       PerfilAdminComponent,
       PerfilVisitanteComponent,
-      TermosCondicoesComponent
+      TermosCondicoesComponent,
    ],
   imports: [
     BrowserModule,
