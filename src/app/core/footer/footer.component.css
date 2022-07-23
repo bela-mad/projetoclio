@@ -1,0 +1,39 @@
+.footer {
+    background-color: #EDF6F9;
+    color: black;
+    text-align: center;
+}
+
+.footer li {
+    margin-left: auto;
+    margin-right: auto;
+    display: inline-block;
+}
+
+.footer ul {
+    list-style-type: none;
+    overflow: hidden;
+}
+
+.footer li a i {
+    color: black;
+    text-decoration: none;
+    padding: 20px 20px;
+    margin-bottom: 5pt;
+}
+
+.footer li a:hover {
+    color: rgb(180, 29, 29);
+}
+
+.politermos {
+    font-family: "Poppins", sans-serif;
+    color: black;
+    text-decoration: none;
+}
+
+.creditos {
+    font-family: "Poppins", sans-serif;
+    margin-top: 40pt;
+    padding-bottom: 20pt;
+}
