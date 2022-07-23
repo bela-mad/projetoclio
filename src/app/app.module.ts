@@ -14,8 +14,9 @@ import { CadastroMuseusComponent } from './area-logada/admin/cadastro-museus/cad
 import { ModeracaoAvaliacoesComponent } from './area-logada/admin/moderacao-avaliacoes/moderacao-avaliacoes.component';
 import { PerfilVisitanteComponent } from './area-logada/perfis/perfil-visitante/perfil-visitante.component';
 import { TermosCondicoesComponent } from './core/termos-condicoes/termos-condicoes.component';
+import { TesteComponent } from './teste/teste.component';
 @NgModule({
-  declarations: [		
+  declarations: [			
     AppComponent,
       NavBarComponent,
       FooterComponent,
@@ -27,7 +28,8 @@ import { TermosCondicoesComponent } from './core/termos-condicoes/termos-condico
       ModeracaoAvaliacoesComponent,
       PerfilAdminComponent,
       PerfilVisitanteComponent,
-      TermosCondicoesComponent
+      TermosCondicoesComponent,
+      TesteComponent
    ],
   imports: [
     BrowserModule,
