@@ -13,6 +13,7 @@ import { NavBarComponent } from './core/nav-bar/nav-bar.component';
 import { CadastroMuseusComponent } from './area-logada/admin/cadastro-museus/cadastro-museus.component';
 import { ModeracaoAvaliacoesComponent } from './area-logada/admin/moderacao-avaliacoes/moderacao-avaliacoes.component';
 import { PerfilVisitanteComponent } from './area-logada/perfis/perfil-visitante/perfil-visitante.component';
+import { TermosCondicoesComponent } from './core/termos-condicoes/termos-condicoes.component';
 @NgModule({
   declarations: [		
     AppComponent,
@@ -25,7 +26,8 @@ import { PerfilVisitanteComponent } from './area-logada/perfis/perfil-visitante/
       CadastroMuseusComponent,
       ModeracaoAvaliacoesComponent,
       PerfilAdminComponent,
-      PerfilVisitanteComponent
+      PerfilVisitanteComponent,
+      TermosCondicoesComponent
    ],
   imports: [
     BrowserModule,
