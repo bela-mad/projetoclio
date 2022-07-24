@@ -1,3 +1,46 @@
-.nav-bar nav a {
+.navbar {
+    font-family: "Poppins", sans-serif;
+    background-color: #04889F;
+    display: flex;
+    padding: 8px 20px;
+}
+
+.navbar-nav a {
     color: white;
+    color: rgb(236, 230, 230);
+    text-decoration: underline;
+    display: block;
+}
+
+.nav img {
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-nav li {
+    float: left;
+    text-align: center;
+    letter-spacing: 1px;
+}
+
+.navbar-nav ul {
+    list-style-type: none;
+    overflow: hidden;
+    background-color: #04889F;
+    padding: 0;
+    margin: 0;
+}
+
+.navbar-nav li a {
+    color: rgb(236, 230, 230);
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-style: normal;
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 30px;
+    letter-spacing: 0.05em;
+    text-decoration: underline;
+    padding: 14px 16px;
+    display: block;
 }
