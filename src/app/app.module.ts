@@ -4,6 +4,7 @@ import { LoginComponent } from './area-deslogada/login/login.component';
 import { CadastroComponent } from './area-deslogada/cadastro/cadastro.component';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { MatInputModule } from '@angular/material/input';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -16,26 +17,23 @@ import { PerfilVisitanteComponent } from './area-logada/perfis/perfil-visitante/
 import { TermosCondicoesComponent } from './core/termos-condicoes/termos-condicoes.component';
 import { PoliticaPrivacidadeComponent } from './core/politica-privacidade/politica-privacidade.component';
 @NgModule({
-  declarations: [			
+  declarations: [
     AppComponent,
-      NavBarComponent,
-      FooterComponent,
-      AlterarSenhaComponent,
-      CadastroComponent,
-      LoginComponent,
-      AlterarMuseusComponent,
-      CadastroMuseusComponent,
-      ModeracaoAvaliacoesComponent,
-      PerfilAdminComponent,
-      PerfilVisitanteComponent,
-      TermosCondicoesComponent,
-      PoliticaPrivacidadeComponent,
-   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule
+    NavBarComponent,
+    FooterComponent,
+    AlterarSenhaComponent,
+    CadastroComponent,
+    LoginComponent,
+    AlterarMuseusComponent,
+    CadastroMuseusComponent,
+    ModeracaoAvaliacoesComponent,
+    PerfilAdminComponent,
+    PerfilVisitanteComponent,
+    TermosCondicoesComponent,
+    PoliticaPrivacidadeComponent,
   ],
+  imports: [BrowserModule, AppRoutingModule, MatInputModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
