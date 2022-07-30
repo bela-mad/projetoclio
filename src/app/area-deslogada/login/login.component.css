@@ -1,0 +1,174 @@
+* {
+  font-family: "Poppins", sans-serif;
+  background-color: #83c5be;
+}
+
+.img {
+  padding: 5% 0%;
+}
+
+.img img {
+  display: block;
+  margin: 0% auto;
+}
+
+.row {
+  display: flex;
+  margin: 0;
+}
+
+/* @media screen and (max-width: 600px) { */
+.column {
+  width: 100%;
+  float: left;
+  flex: 50%;
+}
+/* } */
+
+#imagem {
+  align-items: center;
+  justify-content: center;
+  padding: 6% 5.5%;
+}
+
+#text {
+  padding: 0% 5% 6% 5%;
+}
+
+.column h2 {
+  text-align: center;
+  margin: 0;
+  padding-top: 8%;
+  padding-bottom: 8%;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 48px;
+  line-height: 72px;
+  letter-spacing: 0.05em;
+  color: #ffffff;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.column p {
+  margin: 0;
+  text-align: justify;
+  text-indent: 50px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 30px;
+  text-align: justify;
+  letter-spacing: 0.05em;
+  color: #ffffff;
+}
+
+/* Formulário de login */
+#form-login {
+  background-color: #83c5be;
+  padding-top: 5%;
+  padding-bottom: 1%;
+}
+
+#box {
+  margin: 0 auto;
+  width: 600px;
+  height: 480px;
+  padding: 20px;
+  background: #e9f6fa;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 39px;
+}
+
+legend {
+  background: #e9f6fa;
+  padding-bottom: 2%;
+  margin: 0;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 48px;
+  line-height: 72px;
+  text-align: center;
+  letter-spacing: 0.05em;
+  color: #07889b;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+#form {
+  background: #e9f6fa;
+  padding-bottom: 2%;
+  align-items: center;
+  font-style: italic;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 36px;
+  text-align: center;
+  letter-spacing: 0.05em;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+fieldset {
+  align-items: center;
+  background: #e9f6fa;
+}
+
+label {
+  background: #e9f6fa;
+}
+
+input {
+  width: 471px;
+  background: #ffffff;
+  border: 1px solid #747474;
+  border-radius: 15px;
+}
+
+input[type="submit"] {
+  color: #ffffff;
+  background: #ef7649;
+  border: 0;
+  padding: 0.5% 7.3%;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 15px;
+}
+
+#box p {
+  background: #e9f6fa;
+  text-align: center;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 40px;
+  text-align: center;
+  letter-spacing: 0.05em;
+  color: black;
+  padding-bottom: 1.5%;
+  margin: 0;
+}
+
+#box a {
+  background: #e9f6fa;
+}
+
+#box a:hover {
+  color: #324447;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+/* Carrossel */
+
+#carrossel {
+  padding-top: 4%;
+  padding-bottom: 6%;
+}
+
+#carrossel h2 {
+  margin: 0;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 48px;
+  line-height: 72px;
+  letter-spacing: 0.05em;
+  color: #ffffff;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  text-align: center;
+}
