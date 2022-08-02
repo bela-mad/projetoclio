@@ -1,15 +1,20 @@
 .login {
   width: 100%;
-  background-color: #04889F;
   position: relative;
   font-family: "Poppins", sans-serif;
+  background-color: #04889f;
 }
+
+/* Logo do projeto */
 
 .brand {
   display: block;
   align-items: center;
   margin-left: 36rem;
+  padding-top: 7rem;
 }
+
+/* Sobre o site */
 
 .row {
   display: flex;
@@ -33,14 +38,14 @@
   padding: 0% 5% 6% 5%;
 }
 
-.heding-about {
+.heading-about {
   text-align: center;
-  margin: 0;
-  padding-top: 8%;
-  padding-bottom: 25px;
   font-weight: 800;
   font-size: 48px;
   line-height: 72px;
+  margin: 0;
+  padding-top: 8%;
+  padding-bottom: 25px;
   color: #ffffff;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
@@ -54,139 +59,91 @@
 }
 
 /* Formulário de login */
-.form-login{
+
+.form-login {
   display: block;
   width: 668px;
-  margin-left: 22rem;
   height: 540px;
-  background-color:#E9F6FA;
+  margin-left: 22rem;
+  margin-top: 11rem;
+  background-color: #e9f6fa;
   border-radius: 39px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
-.form-entrar{
+.form-entrar {
+  text-align: center;
   font-weight: 800;
   font-size: 48px;
-  color: #07889B;
-  padding: 25px;
-  text-align: center;
+  letter-spacing: 0.05em;
+  margin: 0;
+  padding-top: 2.5rem;
+  padding-bottom: 3rem;
+  color: #07889b;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .form-floating {
-  padding: 0%;
+  padding: 0 6rem;
 }
 
 .form-floating > label {
-  padding: 0;
-  background-color: #07889b;
-}
-
-/*
-
-
-.form-control > label {
-    padding: 0;
-}
-
-.form-entrar {
-
-}
-
-form {
-  background: #e9f6fa;
-  align-items: center;
-  font-style: italic;
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 36px;
-  text-align: center;
-  letter-spacing: 0.05em;
-  color: rgba(0, 0, 0, 0.5);
-}
-
-.fieldset {
-  align-items: center;
-  background: #e9f6fa;
-}
-
-input {
-  margin: 0;
-  width: 471px;
-  background: #ffffff;
-  border: 1px solid #747474;
-  border-radius: 15px;
-}
-
-.form-control label {
-  align-items: center;
-  font-style: italic;
-  font-weight: 500;
-  font-size: 24px;
-  line-height: 36px;
-  text-align: center;
-  letter-spacing: 0.05em;
-  color: rgba(0, 0, 0, 0.5);
+  padding: 1rem 7.5rem;
 }
 
 button {
-  background: #e9f6fa;
-  font-style: normal;
+  align-items: center;
+  width: 471px;
+  height: 55px;
   font-weight: 800;
   font-size: 32px;
-  line-height: 48px;
-  text-align: center;
   letter-spacing: 0.05em;
-  color: #ffffff;
-  background: #ef7649;
-  border: 0;
+  margin: 2rem 0 2rem 6rem;
   padding: 0.5% 7.3%;
-  margin: 4%;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  background: #ef7649;
+  color: #ffffff;
+  border: 0;
   border-radius: 15px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
-.container {
-
-}
-
-#box p {
-  background: #e9f6fa;
+.form-login p {
   text-align: center;
-  font-style: normal;
   font-weight: 800;
   font-size: 20px;
   line-height: 40px;
-  text-align: center;
   letter-spacing: 0.05em;
-  color: black;
-  padding-bottom: 1.5%;
   margin: 0;
+  padding-bottom: 2.4rem;
+  background: #e9f6fa;
+  color: black;
 }
 
-#box a {
+.form-login a {
   background: #e9f6fa;
 }
 
-#box a:hover {
+.form-login a:hover {
   color: #324447;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 /* Carrossel */
 
-#carrossel {
-  padding-top: 4%;
-  padding-bottom: 6%;
-}
-
-#carrossel h2 {
-  margin: 0;
-  font-style: normal;
+.heading-carrossel {
+  text-align: center;
   font-weight: 800;
   font-size: 48px;
   line-height: 72px;
   letter-spacing: 0.05em;
+  margin: 0;
+  padding-top: 6.25rem;
+  padding-bottom: 3.75rem;
   color: #ffffff;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  text-align: center;
+}
+
+.d-block {
+  margin-left: 21rem;
+  padding-bottom: 4rem;
 }
