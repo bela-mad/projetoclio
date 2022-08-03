@@ -1,4 +1,4 @@
-* {
+.termos-condicoes {
   font-family: "Poppins", sans-serif;
   background-color: #83C5BE;
 }
@@ -60,4 +60,28 @@ li {
 ul {
   overflow: hidden;
   margin-bottom: 0;
+}
+
+/* Faixa de chamada para ação */
+
+.chamada-acao {
+  background-color: #ffddd2;
+  font-family: "Poppins", sans-serif;
+  font-size: 18pt;
+  text-align: center;
+  padding-top: 20px;
+}
+
+.chamada-acao p {
+  text-align: center;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 48px;
+  letter-spacing: 0.05em;
+  color: #006d77;
+}
+
+.chamada-acao p a {
+  color: #ef7649;
+  text-decoration: none;
 }

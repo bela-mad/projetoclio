@@ -30,12 +30,12 @@
 .img-about {
   align-items: center;
   justify-content: center;
-  padding: 6% 5.5%;
+  padding: 12% 5.5% 0 5.5%;
 }
 
 .box-text-about {
   margin-top: 2rem;
-  padding: 0% 5% 6% 5%;
+  padding: 0 5%;
 }
 
 .heading-about {
