@@ -1,41 +1,51 @@
 .footer {
-    background-color: #EDF6F9;
-    color: black;
-    text-align: center;
+  font-family: "Poppins", sans-serif;
+  background-color: #edf6f9;
+  color: black;
+  text-align: center;
 }
 
-.footer li {
-    margin-left: auto;
-    margin-right: auto;
-    display: inline-block;
+.lista {
+  margin: 0;
+  padding-left: 0;
+  list-style-type: none;
+  overflow: hidden;
 }
 
-.footer ul {
-    padding-left: 0;
-    list-style-type: none;
-    overflow: hidden;
+.item {
+  margin-left: auto;
+  margin-right: auto;
+  display: inline-block;
 }
 
-.footer li a i {
-    color: black;
-    text-decoration: none;
-    padding: 20px 20px;
-    padding-bottom: 5pt;
-}
-
-.footer li a:hover {
-    color: rgb(180, 29, 29);
+img {
+  color: black;
+  text-decoration: none;
+  padding: 50px 20px 37px 20px;
 }
 
 .politermos {
-    font-family: "Poppins", sans-serif;
-    color: black;
-    text-decoration: none;
+  margin: 0;
+  padding-bottom: 63px;
+}
+
+.politermos a {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 30px;
+  text-align: center;
+  letter-spacing: 0.05em;
+  text-decoration: none;
+  padding-right: 1.5rem;
+  color: black;
 }
 
 .creditos {
-    font-family: "Poppins", sans-serif;
-    padding-top: 20pt;
-    padding-bottom: 20pt;
-    margin-bottom: 0;
+  font-weight: 500;
+  font-size: 21px;
+  line-height: 32px;
+  text-align: center;
+  letter-spacing: 0.05em;
+  padding-bottom: 20px;
+  margin-bottom: 0;
 }
