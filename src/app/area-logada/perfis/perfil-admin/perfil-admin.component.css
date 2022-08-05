@@ -21,7 +21,7 @@ a.links {
     position: relative;
 }
 
-.title {
+h1 {
     position: static;
     font-family: 'Poppins';
     font-style: normal;
