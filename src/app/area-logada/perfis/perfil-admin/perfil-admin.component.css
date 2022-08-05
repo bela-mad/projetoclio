@@ -1,0 +1,128 @@
+* CSS reset */ *,
+*:before,
+*:after {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* remove a linha dos links */
+a {
+    text-decoration: none;
+}
+
+/* esconde as ancoras da tela */
+a.links {
+    display: none;
+}
+
+.background {
+    background-color: #83C5BE;
+    position: relative;
+}
+
+.title {
+    position: static;
+    font-family: 'Poppins';
+    font-style: normal;
+    text-align: center;
+    font-weight: 800;
+    font-size: 48px;
+    line-height: 72px;
+    margin: 0;
+    padding-top: 8%;
+    padding-bottom: 25px;
+    color: #ffffff;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.content{
+    position: relative;
+}
+.passaporte img {
+
+    width: 1500px;
+    height: 1500px;
+    margin-top: -18%;
+}
+
+.avatar { 
+    position: absolute;
+    width: 250px;
+    height: 250px;
+    left: 240px;
+    top: 140px;
+}
+
+div a {
+    color: #343131;
+}
+
+.list {
+    position: absolute;
+    left: 185px;
+    top: 420px;
+
+    font-family: 'Courier Prime';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 36px;
+    display: flexbox;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.05em;
+
+    color: #343131;
+}
+
+.list p {
+    margin-bottom: 50px;
+}
+
+.list .a {
+    margin-bottom: 26px;
+}
+
+.section {
+
+    width: 1520px;
+    height: 129px;
+    left: 0px;
+   
+    align-items: center;
+    display: flex;
+    justify-content: center;
+
+    background: #FFDDD2;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+
+
+.section p {
+    
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 48px;
+    letter-spacing: 0.05em;
+
+    color: #006D77;
+
+}
+
+.section a {
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 48px;
+    letter-spacing: 0.05em;
+
+    color: #EF7649;
+    ;
+
+}

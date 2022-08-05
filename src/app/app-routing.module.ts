@@ -1,3 +1,5 @@
+import { PerfilVisitanteComponent } from './area-logada/perfis/perfil-visitante/perfil-visitante.component';
+import { PerfilAdminComponent } from './area-logada/perfis/perfil-admin/perfil-admin.component';
 import { AlterarSenhaComponent } from './area-deslogada/alterar-senha/alterar-senha.component';
 import { CadastroComponent } from './area-deslogada/cadastro/cadastro.component';
 import { NgModule } from '@angular/core';
@@ -11,7 +13,9 @@ const routes: Routes = [
   { path: 'termos-condicoes', component: TermosCondicoesComponent },
   { path: 'politica-privacidade', component: PoliticaPrivacidadeComponent },
   { path: 'cadastro', component: CadastroComponent },
-  { path: 'alterar-senha', component: AlterarSenhaComponent }
+  { path: 'alterar-senha', component: AlterarSenhaComponent },
+  { path: 'perfil-admin', component: PerfilAdminComponent },
+  { path: 'perfil-visitante', component: PerfilVisitanteComponent }
 
 ];
 
