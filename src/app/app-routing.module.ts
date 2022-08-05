@@ -1,3 +1,4 @@
+import { AlterarSenhaComponent } from './area-deslogada/alterar-senha/alterar-senha.component';
 import { CadastroComponent } from './area-deslogada/cadastro/cadastro.component';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
@@ -9,7 +10,8 @@ const routes: Routes = [
   { path: '', component: LoginComponent },
   { path: 'termos-condicoes', component: TermosCondicoesComponent },
   { path: 'politica-privacidade', component: PoliticaPrivacidadeComponent },
-  { path: 'cadastro', component: CadastroComponent }
+  { path: 'cadastro', component: CadastroComponent },
+  { path: 'alterar-senha', component: AlterarSenhaComponent }
 
 ];
 
