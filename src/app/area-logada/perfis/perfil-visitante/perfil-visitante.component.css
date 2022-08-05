@@ -1,0 +1,220 @@
+* CSS reset */ *,
+*:before,
+*:after {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* remove a linha dos links */
+a {
+    text-decoration: none;
+}
+
+/* esconde as ancoras da tela */
+a.links {
+    display: none;
+}
+
+.background {
+    background-color: #83C5BE;
+    position: relative;
+}
+
+/*PERFIL PASSAPORTE-VISITANTE*/
+
+.title1 {
+    position: static;
+    font-family: 'Poppins';
+    font-style: normal;
+    text-align: center;
+    font-weight: 800;
+    font-size: 48px;
+    line-height: 72px;
+    margin: 0;
+    padding-top: 8%;
+    padding-bottom: 25px;
+    color: #ffffff;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.content {
+    position: relative;
+    margin-bottom: -200px;
+}
+
+.passaporte img {
+
+    width: 1500px;
+    height: 1500px;
+    margin-top: -18%;
+}
+
+.avatar img {
+    position: absolute;
+    width: 250px;
+    height: 250px;
+    left: 240px;
+    top: 140px;
+}
+
+div a {
+    color: #343131;
+    text-decoration: none;
+}
+
+.list {
+    position: absolute;
+    left: 230px;
+    top: 420px;
+
+    font-family: 'Courier Prime';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 36px;
+    display: flexbox;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.05em;
+
+}
+
+.list .a {
+    margin-top: 20px;
+    margin-bottom: 26px;
+}
+
+/*COMENTÁRIOS PERFIL-VISITANTE*/
+
+.title2 {
+    position: static;
+    font-family: 'Poppins';
+    font-style: normal;
+    text-align: center;
+    font-weight: 800;
+    font-size: 48px;
+    line-height: 72px;
+    padding-bottom: 25px;
+    color: #ffffff;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+/* Style The Dropdown Button */
+.dropbtn {
+    background-color: #9AD0CB;
+    color: white;
+    padding: 20px;
+    font-family: 'Poppins';
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 30px;
+
+    margin-left: 120px;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    border-radius: 15px;
+    background-color: #f9f9f9;
+    min-width: 220px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    margin-top: 2px;
+    margin-left: 70px;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: black;
+    font-family: 'Poppins';
+    padding: 12px 16px;
+    font-size: 12px;
+    text-decoration: none;
+    display: block;
+    border-radius: 15px;
+
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+    background-color: #f1f1f1
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+    background-color: #EF7649;
+}
+
+
+.coments {
+    width: 1264px;
+    height: 800px;
+    margin-left: 120px;
+    margin-top: 40px;
+
+    background: rgba(237, 246, 249, 0.22);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 12px;
+}
+
+/*FAIXA ROSA COM LINK*/
+
+.section {
+
+    width: 1520px;
+    height: 129px;
+    margin-top: 140px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+
+    background: #FFDDD2;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+
+
+.section p {
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 48px;
+    letter-spacing: 0.05em;
+
+    color: #006D77;
+
+}
+
+.section a {
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 48px;
+    letter-spacing: 0.05em;
+
+    color: #EF7649;
+    ;
+
+}

@@ -28,6 +28,7 @@ a.links {
  
 .content {
     background-color: #04889F;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 } 
  
 /* MAIN*/
@@ -108,6 +109,7 @@ button {
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 10px;
     margin: 30px;
+    border: none;
  
     font-family: 'Poppins';
     font-size: 20px;

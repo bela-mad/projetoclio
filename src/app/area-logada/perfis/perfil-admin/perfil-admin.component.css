@@ -36,9 +36,10 @@ h1 {
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
-.content{
+.content {
     position: relative;
 }
+
 .passaporte img {
 
     width: 1500px;
@@ -46,7 +47,7 @@ h1 {
     margin-top: -18%;
 }
 
-.avatar { 
+.avatar {
     position: absolute;
     width: 250px;
     height: 250px;
@@ -72,8 +73,6 @@ div a {
     align-items: center;
     text-align: center;
     letter-spacing: 0.05em;
-
-    color: #343131;
 }
 
 .list p {
@@ -89,7 +88,6 @@ div a {
     width: 1520px;
     height: 129px;
     left: 0px;
-   
     align-items: center;
     display: flex;
     justify-content: center;
@@ -101,7 +99,7 @@ div a {
 
 
 .section p {
-    
+
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 600;
