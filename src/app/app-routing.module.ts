@@ -1,3 +1,4 @@
+import { CadastroComponent } from './area-deslogada/cadastro/cadastro.component';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { LoginComponent } from './area-deslogada/login/login.component';
@@ -7,7 +8,8 @@ import { TermosCondicoesComponent } from './core/termos-condicoes/termos-condico
 const routes: Routes = [
   { path: '', component: LoginComponent },
   { path: 'termos-condicoes', component: TermosCondicoesComponent },
-  { path: 'politica-privacidade', component: PoliticaPrivacidadeComponent }
+  { path: 'politica-privacidade', component: PoliticaPrivacidadeComponent },
+  { path: 'cadastro', component: CadastroComponent }
 
 ];
 
