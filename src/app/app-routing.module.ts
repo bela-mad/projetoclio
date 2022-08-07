@@ -13,10 +13,10 @@ import { PoliticaPrivacidadeComponent } from './core/politica-privacidade/politi
 import { TermosCondicoesComponent } from './core/termos-condicoes/termos-condicoes.component';
 import { InicioComponent } from './area-logada/inicio/inicio.component';
 import { SobreComponent } from './area-logada/sobre/sobre.component';
-import { MuseuLinguaPortuguesaComponent } from './area-logada/museu-lingua-portuguesa/museu-lingua-portuguesa.component';
+
 
 const routes: Routes = [
-  { path: 'login', component: LoginComponent },
+  { path: '', component: LoginComponent },
   { path: 'termos-condicoes', component: TermosCondicoesComponent },
 <<<<<<< HEAD
   { path: 'cadastro', component: CadastroComponent },
@@ -26,7 +26,6 @@ const routes: Routes = [
   { path: 'inicio', component: InicioComponent },
   { path: 'sobre', component: SobreComponent },
   { path: 'alterar-museus', component: AlterarMuseusComponent },
-  { path: 'museu-lingua-portuguesa', component: MuseuLinguaPortuguesaComponent }
 =======
   { path: 'politica-privacidade', component: PoliticaPrivacidadeComponent },
   { path: 'cadastro-museus', component: CadastroMuseusComponent },
