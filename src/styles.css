@@ -1,14 +1,1 @@
 /* You can add global styles to this file, and also import other style files */
-
-html, body { height: 100%; }
-
-@font-face {
-    font-family: poppins;
-    src: url(assets/fonts/Poppins-Regular.ttf) format("opentype");
-  }
-@font-face {
-    font-family: courierPrime;
-    src: url(assets/fonts/CourierPrime-Regular.ttf) format("opentype");
-}
-
-body { margin: 0; font-family: sans-serif; }

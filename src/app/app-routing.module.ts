@@ -10,12 +10,21 @@ import { CadastroMuseusComponent } from './area-logada/admin/cadastro-museus/cad
 import { ModeracaoAvaliacoesComponent } from './area-logada/admin/moderacao-avaliacoes/moderacao-avaliacoes.component';
 import { PoliticaPrivacidadeComponent } from './core/politica-privacidade/politica-privacidade.component';
 import { TermosCondicoesComponent } from './core/termos-condicoes/termos-condicoes.component';
+import { InicioComponent } from './area-logada/inicio/inicio.component';
+import { SobreComponent } from './area-logada/sobre/sobre.component';
+import { MuseuLinguaPortuguesaComponent } from './area-logada/museu-lingua-portuguesa/museu-lingua-portuguesa.component';
 
 const routes: Routes = [
-  { path: '', component: LoginComponent },
+  { path: 'login', component: LoginComponent },
   { path: 'termos-condicoes', component: TermosCondicoesComponent },
-
-
+  { path: 'cadastro', component: CadastroComponent },
+  { path: 'alterar-senha', component: AlterarSenhaComponent },
+  { path: 'perfil-admin', component: PerfilAdminComponent },
+  { path: 'perfil-visitante', component: PerfilVisitanteComponent },
+  { path: 'inicio', component: InicioComponent },
+  { path: 'sobre', component: SobreComponent },
+  { path: 'alterar-museus', component: AlterarMuseusComponent },
+  { path: 'museu-lingua-portuguesa', component: MuseuLinguaPortuguesaComponent }
 ];
 
 @NgModule({

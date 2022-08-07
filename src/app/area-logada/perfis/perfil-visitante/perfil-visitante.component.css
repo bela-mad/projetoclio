@@ -29,33 +29,34 @@ a.links {
     font-style: normal;
     text-align: center;
     font-weight: 800;
-    font-size: 48px;
+    font-size: 42px;
     line-height: 72px;
     margin: 0;
     padding-top: 8%;
-    padding-bottom: 25px;
+    padding-bottom: 100px;
     color: #ffffff;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .content {
     position: relative;
-    margin-bottom: -200px;
+    margin-bottom: -100px;
 }
 
 .passaporte img {
 
-    width: 1500px;
-    height: 1500px;
+    width: 1100px;
+    height: 1100px;
     margin-top: -18%;
+    margin-left: 13.5%;
 }
 
 .avatar img {
     position: absolute;
-    width: 250px;
-    height: 250px;
-    left: 240px;
-    top: 140px;
+    width: 170px;
+    height: 170px;
+    left: 400px;
+    top: 40px;
 }
 
 div a {
@@ -65,13 +66,13 @@ div a {
 
 .list {
     position: absolute;
-    left: 230px;
-    top: 420px;
+    left: 375px;
+    top: 230px;
 
     font-family: 'Courier Prime';
     font-style: normal;
     font-weight: 700;
-    font-size: 32px;
+    font-size: 26px;
     line-height: 36px;
     display: flexbox;
     align-items: center;
@@ -81,8 +82,7 @@ div a {
 }
 
 .list .a {
-    margin-top: 20px;
-    margin-bottom: 26px;
+    margin-top: 15px;
 }
 
 /*COMENTÁRIOS PERFIL-VISITANTE*/
@@ -93,7 +93,7 @@ div a {
     font-style: normal;
     text-align: center;
     font-weight: 800;
-    font-size: 48px;
+    font-size: 42px;
     line-height: 72px;
     padding-bottom: 25px;
     color: #ffffff;
@@ -106,7 +106,7 @@ div a {
     color: white;
     padding: 20px;
     font-family: 'Poppins';
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 700;
     letter-spacing: 0.05em;
     border: none;
@@ -115,7 +115,7 @@ div a {
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 30px;
 
-    margin-left: 120px;
+    margin-left: 200px;
 }
 
 /* The container <div> - needed to position the dropdown content */
@@ -133,7 +133,7 @@ div a {
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 1;
     margin-top: 2px;
-    margin-left: 70px;
+    margin-left: 140px;
 }
 
 /* Links inside the dropdown */
@@ -165,11 +165,10 @@ div a {
 
 
 .coments {
-    width: 1264px;
-    height: 800px;
-    margin-left: 120px;
+    width: 1100px;
+    height: 550px;
+    margin-left: 13.5%;
     margin-top: 40px;
-
     background: rgba(237, 246, 249, 0.22);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 12px;
@@ -180,7 +179,7 @@ div a {
 .section {
 
     width: 1520px;
-    height: 129px;
+    height: 100px;
     margin-top: 140px;
     align-items: center;
     display: flex;
@@ -197,7 +196,7 @@ div a {
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 600;
-    font-size: 32px;
+    font-size: 28px;
     line-height: 48px;
     letter-spacing: 0.05em;
 
@@ -210,7 +209,7 @@ div a {
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 600;
-    font-size: 32px;
+    font-size: 28px;
     line-height: 48px;
     letter-spacing: 0.05em;
 
