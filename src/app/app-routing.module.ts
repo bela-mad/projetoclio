@@ -8,6 +8,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { LoginComponent } from './area-deslogada/login/login.component';
 import { CadastroMuseusComponent } from './area-logada/admin/cadastro-museus/cadastro-museus.component';
 import { ModeracaoAvaliacoesComponent } from './area-logada/admin/moderacao-avaliacoes/moderacao-avaliacoes.component';
+import { MuseusComponent } from './area-logada/museus/museus.component';
 import { PoliticaPrivacidadeComponent } from './core/politica-privacidade/politica-privacidade.component';
 import { TermosCondicoesComponent } from './core/termos-condicoes/termos-condicoes.component';
 import { InicioComponent } from './area-logada/inicio/inicio.component';
@@ -17,6 +18,7 @@ import { MuseuLinguaPortuguesaComponent } from './area-logada/museu-lingua-portu
 const routes: Routes = [
   { path: 'login', component: LoginComponent },
   { path: 'termos-condicoes', component: TermosCondicoesComponent },
+<<<<<<< HEAD
   { path: 'cadastro', component: CadastroComponent },
   { path: 'alterar-senha', component: AlterarSenhaComponent },
   { path: 'perfil-admin', component: PerfilAdminComponent },
@@ -25,6 +27,13 @@ const routes: Routes = [
   { path: 'sobre', component: SobreComponent },
   { path: 'alterar-museus', component: AlterarMuseusComponent },
   { path: 'museu-lingua-portuguesa', component: MuseuLinguaPortuguesaComponent }
+=======
+  { path: 'politica-privacidade', component: PoliticaPrivacidadeComponent },
+  { path: 'cadastro-museus', component: CadastroMuseusComponent },
+  { path: 'moderacao-avaliacoes', component: ModeracaoAvaliacoesComponent },
+  { path: 'museus', component: MuseusComponent },
+
+>>>>>>> c0c83eb2c5c12d95a11deddda60d78f1d6efcdc2
 ];
 
 @NgModule({
