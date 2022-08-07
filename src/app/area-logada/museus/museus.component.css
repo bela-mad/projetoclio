@@ -1,0 +1,46 @@
+.museus {
+  width: 100%;
+  position: relative;
+  font-family: "Poppins", sans-serif;
+  background-color: #83c5be;
+}
+
+/* Título da página */
+
+.heading-museus {
+  text-align: center;
+  letter-spacing: 0.05em;
+  font-size: 48px;
+  line-height: 72px;
+  font-weight: 800;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  color: white;
+  margin: 0;
+  padding-top: 11.6rem;
+  padding-bottom: 3.25rem;
+}
+
+/* Pesquisa de Museus */
+
+.input-buscar {
+  width: 402px;
+  height: 75px;
+  font-size: 18px;
+  margin: 73px;
+  padding-left: 2rem;
+  border: 1px solid #83c5be;
+  border-radius: 45px;
+  background-color: #9bd0cb;
+}
+
+::placeholder {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 39px;
+  letter-spacing: 0.05em;
+  color: white;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+/* Mosaico de Museus (grid) */
+
