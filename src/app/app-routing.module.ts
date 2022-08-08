@@ -13,6 +13,7 @@ import { PoliticaPrivacidadeComponent } from './core/politica-privacidade/politi
 import { TermosCondicoesComponent } from './core/termos-condicoes/termos-condicoes.component';
 import { InicioComponent } from './area-logada/inicio/inicio.component';
 import { SobreComponent } from './area-logada/sobre/sobre.component';
+import { RankingComponent } from './area-logada/ranking/ranking.component';
 
 const routes: Routes = [
   
@@ -29,6 +30,7 @@ const routes: Routes = [
   { path: 'cadastro-museus', component: CadastroMuseusComponent },
   { path: 'moderacao-avaliacoes', component: ModeracaoAvaliacoesComponent },
   { path: 'museus', component: MuseusComponent },
+  { path: 'ranking', component: RankingComponent },
 
 ];
 
