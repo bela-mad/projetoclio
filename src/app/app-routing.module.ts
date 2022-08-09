@@ -14,6 +14,7 @@ import { TermosCondicoesComponent } from './core/termos-condicoes/termos-condico
 import { InicioComponent } from './area-logada/inicio/inicio.component';
 import { SobreComponent } from './area-logada/sobre/sobre.component';
 import { RankingComponent } from './area-logada/ranking/ranking.component';
+import { EmConstrucaoComponent } from './core/em-construcao/em-construcao.component';
 
 const routes: Routes = [
   
@@ -31,6 +32,7 @@ const routes: Routes = [
   { path: 'moderacao-avaliacoes', component: ModeracaoAvaliacoesComponent },
   { path: 'museus', component: MuseusComponent },
   { path: 'ranking', component: RankingComponent },
+  { path: 'em-construcao', component: EmConstrucaoComponent },
 
 ];
 

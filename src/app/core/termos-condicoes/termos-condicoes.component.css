@@ -15,22 +15,22 @@ h1 {
   font-size: 48px;
   line-height: 72px;
   font-weight: 800;
-  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  color: white;
   margin: 0;
   padding-top: 8%;
   padding-bottom: 5%;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  color: white;
 }
 
 h2 {
   letter-spacing: 0.05em;
-  padding: 0% 3%;
-  margin-bottom: 0;
   text-align: justify;
   text-indent: 50px;
-  font-weight: bold;
-  color: white;
   font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 0;
+  padding: 0% 3%;
+  color: white;
 }
 
 a {
@@ -42,25 +42,25 @@ a {
 
 .text {
   text-align: justify;
-  color: white;
   font-size: 20px;
   letter-spacing: 0.3px;
   line-height: 1.5;
   text-indent: 50px;
-  padding: 2% 6%;
   margin-bottom: 0;
+  padding: 2% 6%;
+  color: white;
 }
 
 li {
-  padding: 5px 0px;
+  list-style-type: disc;
   text-align: justify;
-  color: white;
   font-size: 20px;
   letter-spacing: 0.5px;
   line-height: 1.3;
   margin-left: 7%;
   margin-right: 7%;
-  list-style-type: disc;
+  padding: 5px 0px;
+  color: white;
 }
 
 ul {
@@ -72,7 +72,6 @@ ul {
 
 .chamada-acao {
   background-color: #ffddd2;
-  font-family: "Poppins", sans-serif;
   font-size: 25px;
   text-align: center;
   margin-top: 2rem;
@@ -89,6 +88,6 @@ ul {
 }
 
 .chamada a {
-  color: #ef7649;
   text-decoration: none;
+  color: #ef7649;
 }
