@@ -1,6 +1,6 @@
 .termos-condicoes {
   font-family: "Poppins", sans-serif;
-  background-color: #83C5BE;
+  background-color: #83c5be;
 }
 
 article {
@@ -12,49 +12,55 @@ article {
 h1 {
   text-align: center;
   letter-spacing: 0.05em;
-  font-style: normal;
   font-size: 48px;
   line-height: 72px;
   font-weight: 800;
+  margin: 0;
+  padding-top: 8%;
+  padding-bottom: 5%;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   color: white;
-  padding-top: 3%;
-  padding-bottom: 1%;
-  margin: 0;
-  text-shadow: black;
 }
 
 h2 {
-  padding: 0% 3%;
-  margin-bottom: 0;
+  letter-spacing: 0.05em;
   text-align: justify;
   text-indent: 50px;
-  font-weight: bold;
-  color: white;
   font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 0;
+  padding: 0% 3%;
+  color: white;
 }
 
-p {
-  text-align: justify;
+a {
+  font-weight: bold;
+  font-style: italic;
+  text-decoration: none;
   color: white;
+}
+
+.text {
+  text-align: justify;
   font-size: 20px;
   letter-spacing: 0.3px;
   line-height: 1.5;
   text-indent: 50px;
+  margin-bottom: 0;
   padding: 2% 6%;
-  margin-bottom:0;
+  color: white;
 }
 
 li {
-  padding: 5px 0px;
+  list-style-type: disc;
   text-align: justify;
-  color: white;
   font-size: 20px;
   letter-spacing: 0.5px;
   line-height: 1.3;
   margin-left: 7%;
   margin-right: 7%;
-  list-style-type: disc;
+  padding: 5px 0px;
+  color: white;
 }
 
 ul {
@@ -66,22 +72,22 @@ ul {
 
 .chamada-acao {
   background-color: #ffddd2;
-  font-family: "Poppins", sans-serif;
-  font-size: 18pt;
+  font-size: 25px;
   text-align: center;
-  padding-top: 20px;
+  margin-top: 2rem;
 }
 
-.chamada-acao p {
+.chamada {
   text-align: center;
   font-weight: 600;
-  font-size: 32px;
   line-height: 48px;
   letter-spacing: 0.05em;
+  margin: 0;
+  padding: 25px 0;
   color: #006d77;
 }
 
-.chamada-acao p a {
-  color: #ef7649;
+.chamada a {
   text-decoration: none;
+  color: #ef7649;
 }

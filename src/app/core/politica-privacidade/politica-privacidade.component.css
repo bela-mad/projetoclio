@@ -12,77 +12,74 @@ article {
 h1 {
   text-align: center;
   letter-spacing: 0.05em;
-  font-style: normal;
   font-size: 48px;
   line-height: 72px;
   font-weight: 800;
+  margin: 0;
+  padding-top: 8%;
+  padding-bottom: 5%;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   color: white;
-  padding-top: 5%;
-  padding-bottom: 5%;
-  margin: 0;
-  text-shadow: black;
 }
 
 h2 {
-  padding: 0% 3%;
+  text-align: center;
+  font-size: 22px;
+  font-weight: bold;
+  letter-spacing: 1px;
   margin-top: 2%;
   margin-bottom: 2%;
-  text-align: center;
-  text-indent: 50px;
-  font-weight: bold;
   color: white;
-  font-size: 20px;
 }
 
-p {
+.text {
   text-align: justify;
-  color: white;
   font-size: 20px;
   letter-spacing: 0.3px;
   line-height: 1.5;
   text-indent: 50px;
-  padding: 0% 6% 2% 6%;
   margin-bottom: 0;
+  padding: 0% 6% 2% 6%;
+  color: white;
 }
 
 li {
   text-align: justify;
   font-weight: bold;
-  color: white;
   font-size: 20px;
   letter-spacing: 0.5px;
   line-height: 1.3;
   margin: 0% 7% 2% 7.5%;
+  color: white;
 }
 
 ul {
   overflow: hidden;
   list-style-type: none;
-  padding: 0;
   margin-bottom: 0;
+  padding: 0;
 }
 
 /* Faixa de chamada para ação */
 
 .chamada-acao {
   background-color: #ffddd2;
-  font-family: "Poppins", sans-serif;
-  font-size: 18pt;
+  font-size: 25px;
   text-align: center;
-  padding-top: 20px;
+  margin-top: 2rem;
 }
 
-.chamada-acao p {
+.chamada {
   text-align: center;
   font-weight: 600;
-  font-size: 32px;
   line-height: 48px;
   letter-spacing: 0.05em;
+  margin: 0;
+  padding: 25px 0;
   color: #006d77;
 }
 
-.chamada-acao p a {
-  color: #ef7649;
+.chamada a {
   text-decoration: none;
+  color: #ef7649;
 }

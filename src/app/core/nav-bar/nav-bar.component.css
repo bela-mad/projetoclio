@@ -1,44 +1,44 @@
 .navbar {
-    display: flex;
-    font-family: "Poppins", sans-serif;
-    background-color: #04889F;
-    padding: 8px 20px;
+  display: flex;
+  font-family: "Poppins", sans-serif;
+  background-color: #04889f;
+  padding: 8px 25px;
 }
 
 .navbar-nav a {
-    display: block;
-    color: #ffffff;
-    text-decoration: underline;
+  display: block;
+  color: #ffffff;
+  text-decoration: underline;
 }
 
 .nav img {
-    display: flex;
-    margin: 0;
-    padding: 0;
+  display: flex;
+  margin: 0;
+  padding: 0;
 }
 
 .navbar-nav li {
-    float: left;
-    text-align: center;
-    letter-spacing: 1px;
+  float: left;
+  text-align: center;
+  letter-spacing: 1px;
 }
 
 .navbar-nav ul {
-    list-style-type: none;
-    overflow: hidden;
-    padding: 0;
-    margin: 0;
-    background-color: #04889F;
+  list-style-type: none;
+  overflow: hidden;
+  padding: 0;
+  margin: 0;
+  background-color: #04889f;
 }
 
 .navbar-nav li a {
-    display: block;
-    font-weight: 800;
-    font-size: 20px;
-    line-height: 30px;
-    letter-spacing: 0.05em;
-    text-decoration: underline;
-    padding: 14px 16px;
-    color: #ffffff;
-    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  display: block;
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 30px;
+  letter-spacing: 0.05em;
+  text-decoration: none;
+  padding: 14px 16px;
+  color: #ffffff;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }

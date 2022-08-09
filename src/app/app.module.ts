@@ -17,6 +17,8 @@ import { PerfilVisitanteComponent } from './area-logada/perfis/perfil-visitante/
 import { TermosCondicoesComponent } from './core/termos-condicoes/termos-condicoes.component';
 import { PoliticaPrivacidadeComponent } from './core/politica-privacidade/politica-privacidade.component';
 import { MuseusComponent } from './area-logada/museus/museus.component';
+import { RankingComponent } from './area-logada/ranking/ranking.component';
+import { EmConstrucaoComponent } from './core/em-construcao/em-construcao.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -33,6 +35,8 @@ import { MuseusComponent } from './area-logada/museus/museus.component';
     TermosCondicoesComponent,
     PoliticaPrivacidadeComponent,
     MuseusComponent,
+    RankingComponent,
+    EmConstrucaoComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, MatInputModule],
   providers: [],
