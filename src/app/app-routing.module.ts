@@ -16,23 +16,21 @@ import { SobreComponent } from './area-logada/sobre/sobre.component';
 
 
 const routes: Routes = [
-  { path: '', component: LoginComponent },
+  { path: 'login', component: LoginComponent },
   { path: 'termos-condicoes', component: TermosCondicoesComponent },
-<<<<<<< HEAD
   { path: 'cadastro', component: CadastroComponent },
   { path: 'alterar-senha', component: AlterarSenhaComponent },
   { path: 'perfil-admin', component: PerfilAdminComponent },
   { path: 'perfil-visitante', component: PerfilVisitanteComponent },
   { path: 'inicio', component: InicioComponent },
   { path: 'sobre', component: SobreComponent },
-  { path: 'alterar-museus', component: AlterarMuseusComponent },
-=======
+  { path: 'alterar-museus', component: AlterarMuseusComponent }
+
   { path: 'politica-privacidade', component: PoliticaPrivacidadeComponent },
   { path: 'cadastro-museus', component: CadastroMuseusComponent },
   { path: 'moderacao-avaliacoes', component: ModeracaoAvaliacoesComponent },
   { path: 'museus', component: MuseusComponent },
 
->>>>>>> c0c83eb2c5c12d95a11deddda60d78f1d6efcdc2
 ];
 
 @NgModule({
