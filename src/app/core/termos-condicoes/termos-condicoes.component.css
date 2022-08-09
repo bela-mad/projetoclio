@@ -33,6 +33,13 @@ h2 {
   font-size: 20px;
 }
 
+a {
+  font-weight: bold;
+  font-style: italic;
+  text-decoration: none;
+  color: white;
+}
+
 .text {
   text-align: justify;
   color: white;
