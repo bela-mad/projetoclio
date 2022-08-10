@@ -1,5 +1,4 @@
 
-
 .sobre {
   background-color: #83C5BE;
   position: relative;
@@ -40,7 +39,7 @@
 .card1 {
   width: 500px;
   margin-top: -240px;
-  margin-right: 250px;
+  margin-right: 200px;
   float: right;
 }
 
@@ -48,7 +47,7 @@
   width: 550px;
   height: 250px;
   margin-right: 170px;
-  margin-top: 120px;
+  margin-top: 80px;
   text-align: justify;
   font-style: normal;
   font-weight: 600;
@@ -61,17 +60,18 @@
 }
 
 .card2 {
-  width: 400px;
-  margin-top: 90px;
+  width: 500px;
+  margin-top: 100px;
   margin-left: 170px;
+  margin-bottom: 10px;
   float: left;
 }
 
 .paragrafo3 {
-  width: 550px;
+  width: 540px;
   height: 250px;
   margin-left: 140px;
-  margin-top: 450px;
+  margin-top: 480px;
   text-align: justify;
   font-style: normal;
   font-weight: 600;
@@ -83,9 +83,9 @@
 }
 
 .card3 {
-  width: 400px;
+  width: 500px;
   margin-top: -330px;
-  margin-right: 250px;
+  margin-right: 200px;
   float: right;
 }
 
@@ -95,7 +95,10 @@
   margin-left: 140px;
   margin-top: 5%;
   margin-bottom: 5%;
-
+  font-style: normal;
+  font-weight: 800;
+  text-decoration: none;
+  color: #006D77;
   background: rgba(237, 246, 249, 0.22);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 12px;
@@ -116,6 +119,8 @@
 .elipse1 a {
   margin-left: 95px;
   margin-bottom: 15px;
+  color: #EF7649;
+
 }
 
 .elipse2 img {
@@ -124,26 +129,28 @@
   margin-bottom: 15px;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
   float: right;
+  
 }
 
 .elipse2 p {
   margin-top: -42px;
-  margin-right: 650px;
+  margin-right: 780px;
   margin-bottom: 2px;
   float: right;
 }
 
 .elipse2 a {
-  margin-right: 680px;
+  margin-right: 815px;
   margin-bottom: 15px;
   margin-top: -20px;
   float: right;
+  color: #EF7649;
 }
 
 
 .elipse3 img {
   margin-top: -222px;
-  margin-right: 540px;
+  margin-right: 530px;
   margin-bottom: 15px;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
   float: right;
@@ -151,16 +158,17 @@
 
 .elipse3 p {
   margin-top: -57px;
-  margin-right: 450px;
+  margin-right: 555px;
   margin-bottom: 2px;
   float: right;
 }
 
 .elipse3 a {
-  margin-right: 470px;
+  margin-right: 580px;
   margin-bottom: 15px;
   margin-top: -35px;
   float: right;
+  color: #EF7649;
 }
 
 .elipse4 img {
@@ -173,16 +181,17 @@
 
 .elipse4 p {
   margin-top: -57px;
-  margin-right: 240px;
+  margin-right: 315px;
   margin-bottom: 2px;
   float: right;
 }
 
 .elipse4 a {
-  margin-right: 270px;
+  margin-right: 350px;
   margin-bottom: 15px;
   margin-top: -35px;
   float: right;
+  color: #EF7649;
 }
 
 .elipse5 img {
@@ -195,16 +204,17 @@
 
 .elipse5 p {
   margin-top: -57px;
-  margin-right: 50px;
+  margin-right: 70px;
   margin-bottom: 2px;
   float: right;
 }
 
 .elipse5 a {
-  margin-right: 70px;
+  margin-right: 95px;
   margin-bottom: 15px;
   margin-top: -35px;
   float: right;
+  color: #EF7649;
 }
 /*FAIXA ROSA COM LINK*/
 
@@ -224,8 +234,6 @@
 
 
 .section p {
-
-  font-family: 'Poppins';
   font-style: normal;
   font-weight: 600;
   font-size: 28px;
@@ -237,8 +245,6 @@
 }
 
 .section a {
-
-  font-family: 'Poppins';
   font-style: normal;
   font-weight: 600;
   font-size: 28px;
