@@ -54,24 +54,30 @@
     text-align: center;
 }
  
-input {
+.form-floating input {
  
     width: 270px;
-    height: 38px;
+    height: 50px;
     left: 474px;
     top: 553px;
     margin: 12px;
+    margin-left: 53px;
  
     background: #FFFFFF;
     border: 1px solid #747474;
     border-radius: 10px;
 }
+.form-floating label{
+    margin-left: 50px;
+}
+
 input::placeholder {
     font-size: 14px;
-    padding: 5px;
+    padding: 20px;
     font-style: italic;
  
 }
+
 
  
 button {
