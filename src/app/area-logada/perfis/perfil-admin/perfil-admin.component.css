@@ -1,31 +1,9 @@
-* CSS reset */ *,
-*:before,
-*:after {
-    margin: 0;
-    padding: 0;
-    font-family: Arial, sans-serif;
-}
-
-/* remove a linha dos links */
-a {
-    text-decoration: none;
-}
-
-/* esconde as ancoras da tela */
-a.links {
-    display: none;
-}
-
-.perfil-admin {
-    background-color: #83C5BE;
-    position: relative;
-}
 
 /*PERFIL PASSAPORTE-ADMINISTRADOR*/
 
 h1 {
     position: static;
-    font-family: 'Poppins';
+    font-family: "Poppins", sans-serif;
     font-style: normal;
     text-align: center;
     font-weight: 800;
@@ -102,7 +80,7 @@ div a {
 
 .section p {
 
-    font-family: 'Poppins';
+    font-family: "Poppins", sans-serif;
     font-style: normal;
     font-weight: 600;
     font-size: 28px;
@@ -115,7 +93,7 @@ div a {
 
 .section a {
 
-    font-family: 'Poppins';
+    font-family: "Poppins", sans-serif;
     font-style: normal;
     font-weight: 600;
     font-size: 28px;
