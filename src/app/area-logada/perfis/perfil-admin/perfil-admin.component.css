@@ -1,6 +1,11 @@
 
 /*PERFIL PASSAPORTE-ADMINISTRADOR*/
 
+.perfil-admin {
+    background-color: #83C5BE;
+    position: relative;
+}
+
 h1 {
     position: static;
     font-family: "Poppins", sans-serif;
@@ -101,6 +106,5 @@ div a {
     letter-spacing: 0.05em;
 
     color: #EF7649;
-    ;
 
 }
