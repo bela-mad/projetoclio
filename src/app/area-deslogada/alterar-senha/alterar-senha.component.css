@@ -1,8 +1,4 @@
 
-/*CADASTRAR E ALTERAR SENHA*/
- 
-/*TODO CONTEÚDO*/
- 
 .alterar {
     width: 100%;
     height: 100%;
@@ -91,6 +87,7 @@ button {
     border-radius: 10px;
     margin: 30px;
     border: none;
+    
     font-size: 20px;
     text-align: center;
     letter-spacing: 0.05em;
