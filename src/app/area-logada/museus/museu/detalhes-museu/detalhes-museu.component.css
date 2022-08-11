@@ -1,6 +1,186 @@
-.inicio {
-    background-color: #83C5BE;
-    position: relative;
-    width: 100%;
+.detalhes-museu {
+  background-color: #83C5BE;
+  position: relative;
+  font-family: "Poppins", sans-serif;
+  padding-bottom: 100px;
+  width: 100%;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.img-museu img {
+  width: 1688px;
+}
+
+.nome-museu {
+  position: static;
+  font-style: normal;
+  text-align: center;
+  font-weight: 800;
+  font-size: 42px;
+  line-height: 72px;
+  margin: 20px;
+  padding-bottom: 100px;
+  color: #ffffff;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.estrela-nota {
+  margin-left: 48%;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  border-radius: 31px;
+}
+
+.descricao p {
+  margin-left: 200px;
+  margin-bottom: 60px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 30px;
+  text-align: justify;
+  letter-spacing: 0.05em;
+
+  color: #FFFFFF;
+}
+
+.detalhes-museu h3 {
+
+  font-style: normal;
+  font-weight: 800;
+  font-size: 24px;
+  line-height: 45px;
+  margin-left: 100px;
+  margin-top: 15px;
+  text-align: left;
+  letter-spacing: 0.1em;
+
+  color: #FFFFFF;
+
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.funcionamento p {
+  margin-left: 100px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 30px;
+  text-align: justify;
+  letter-spacing: 0.05em;
+
+  color: #FFFFFF;
+}
+
+.endereco p {
+  margin-left: 100px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 30px;
+  text-align: justify;
+  letter-spacing: 0.05em;
+
+  color: #FFFFFF;
+}
+
+.mais-informacoes .p1{
+  margin-left: 160px;
+  margin-top: -40px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 30px;
+  text-align: justify;
+  letter-spacing: 0.05em;
+
+  color: #FFFFFF;
+}
+
+.mais-informacoes .p2{
+  margin-left: 160px;
+  margin-top: -40px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 30px;
+  text-align: justify;
+  letter-spacing: 0.05em;
+
+  color: #FFFFFF;
+}
+
+.mais-informacoes .img1 {
+  margin-left: 100px;
+}
+
+.mais-informacoes .img2 {
+  margin-left: 106px;
+}
+
+.estrela.avaliacao {
+  margin: 20px 48%;
+  margin-bottom: 100px;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  border-radius: 31px;
+}
+
+.avaliacao {
+width: 800px;
+height: 204px;
+margin: 20px 23%;
+background: rgba(233, 246, 250, 0.23);
+border: none;
+border-radius: 40px;
+}
+
+
+
+button  {
+    width: 120px;
+    height: 45px;
+    
+ 
+    background: #EF7649;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  }
+    border-radius: 20px;
+    margin: 30px 45%;
+    border: none;
+    
+    font-size: 20px;
+    text-align: center;
+    letter-spacing: 0.05em;
+ 
+    color: #FFFFFF;
+}
+
+.comentarios {
+  width: 1000px;
+height: 500px;
+margin: 30px 250px ;
+
+background: rgba(237, 246, 249, 0.22);
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+border-radius: 12px;
+}
+
+.title {
+
+  font-style: normal;
+font-weight: 800;
+font-size: 30px;
+line-height: 45px;
+padding: 25px 0px;
+letter-spacing: 0.1em;
+
+color: #FFFFFF;
+}
+
+
+.linha {
+
+  width: 1342px;
+  height: 0px;
+  margin: 50px 80px;
+
+  border: 1px solid #FFFFFF;
+}

@@ -7,21 +7,22 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class DetalhesMuseuComponent implements OnInit {
 
- @Input() nome: String | undefined ;
- @Input() descricaoMuseu: String | undefined ;
- @Input() funcionamentoMuseu: String | undefined ;
- @Input() urlFoto: String | undefined ;
- @Input() urlSite: String | undefined ;
+ @Input() nome: String = '' ;
+ @Input() descricaoMuseu: String = '' ;
+ @Input() funcionamentoMuseu: String = '' ;
+ @Input() urlFoto: String = '' ;
+ @Input() urlSite: String = '' ;
  @Input() urlInstagram: String | undefined ;
- @Input() endereco: String | undefined ;
- @Input() cep: String | undefined ;
- @Input() rua: String | undefined ;
- @Input() numero: String | undefined ;
- @Input() bairro: String | undefined ;
- @Input() cidade: String | undefined ;
- @Input() estado: String | undefined ;
- @Input() pais: String | undefined ;
- @Input() avaliacao: String | undefined ;
+ @Input() endereco: String = ''  ;
+ @Input() cep: String = '' ;
+ @Input() rua: String = ''  ;
+ @Input() numero: String = '' ;
+ @Input() bairro: String = '' ;
+ @Input() cidade: String = '' ;
+ @Input() estado: String = '' ;
+ @Input() pais: String = '' ;
+ @Input() avaliacao: String = ''  ;
+ @Input() nota: String = '' ;
 
   constructor() { }
 
