@@ -1,3 +1,4 @@
+import { HttpClientModule } from '@angular/common/http';
 import { PerfilAdminComponent } from './area-logada/perfis/perfil-admin/perfil-admin.component';
 import { AlterarMuseusComponent } from './area-logada/admin/alterar-museus/alterar-museus.component';
 import { LoginComponent } from './area-deslogada/login/login.component';
@@ -44,7 +45,7 @@ import { DetalhesMuseuComponent } from './area-logada/museus/museu/detalhes-muse
     InicioComponent,
     DetalhesMuseuComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule, MatInputModule],
+  imports: [BrowserModule, AppRoutingModule, MatInputModule, HttpClientModule],
   providers: [],
   bootstrap: [AppComponent],
 })
