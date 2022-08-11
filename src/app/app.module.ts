@@ -21,6 +21,7 @@ import { RankingComponent } from './area-logada/ranking/ranking.component';
 import { EmConstrucaoComponent } from './core/em-construcao/em-construcao.component';
 import { SobreComponent } from './area-logada/sobre/sobre.component';
 import { InicioComponent } from './area-logada/inicio/inicio.component';
+import { DetalhesMuseuComponent } from './area-logada/museus/museu/detalhes-museu/detalhes-museu.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -41,6 +42,7 @@ import { InicioComponent } from './area-logada/inicio/inicio.component';
     EmConstrucaoComponent,
     SobreComponent,
     InicioComponent,
+    DetalhesMuseuComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, MatInputModule],
   providers: [],
