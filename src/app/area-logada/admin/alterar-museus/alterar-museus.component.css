@@ -116,7 +116,7 @@
     font-size: 22px;
     line-height: 42px;
     letter-spacing: 0.05em;
-    margin: 2rem 6.5rem 4rem 1.5rem;
+    margin: 2rem 6.9rem 4rem 1.5rem;
     background: #ef7649;
     color: #ffffff;
     border: 0;
@@ -142,8 +142,6 @@
 
 
 .section p {
-
-    font-family: 'Poppins';
     font-style: normal;
     font-weight: 600;
     font-size: 28px;
@@ -155,8 +153,6 @@
 }
 
 .section a {
-
-    font-family: 'Poppins';
     font-style: normal;
     font-weight: 600;
     font-size: 28px;

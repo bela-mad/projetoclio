@@ -1,31 +1,14 @@
-* CSS reset */ *,
-*:before,
-*:after {
-    margin: 0;
-    padding: 0;
-    font-family: Arial, sans-serif;
-}
 
-/* remove a linha dos links */
-a {
-    text-decoration: none;
-}
+/*PERFIL PASSAPORTE-ADMINISTRADOR*/
 
-/* esconde as ancoras da tela */
-a.links {
-    display: none;
-}
-
-.background {
+.perfil-admin {
     background-color: #83C5BE;
     position: relative;
 }
 
-/*PERFIL PASSAPORTE-ADMINISTRADOR*/
-
 h1 {
     position: static;
-    font-family: 'Poppins';
+    font-family: "Poppins", sans-serif;
     font-style: normal;
     text-align: center;
     font-weight: 800;
@@ -51,12 +34,12 @@ h1 {
     margin-left: 13.5%;
 }
 
-.avatar {
+.avatar img {
     position: absolute;
     width: 170px;
     height: 170px;
-    left: 350px;
-    top: 20px;
+    left: 400px;
+    top: 40px;
 }
 
 div a {
@@ -65,13 +48,13 @@ div a {
 
 .list {
     position: absolute;
-    left: 355px;
-    top: 290px;
+    left: 325px;
+    top: 240px;
 
     font-family: 'Courier Prime';
     font-style: normal;
     font-weight: 700;
-    font-size: 20px;
+    font-size: 26px;
     line-height: 36px;
     display: flexbox;
     align-items: center;
@@ -79,12 +62,8 @@ div a {
     letter-spacing: 0.05em;
 }
 
-.list p {
-    margin-bottom: 12px;
-}
-
 .list .a {
-    margin-bottom: 2px;
+    margin-bottom: 7px;
 }
 
 /*FAIXA ROSA COM LINK*/
@@ -106,7 +85,7 @@ div a {
 
 .section p {
 
-    font-family: 'Poppins';
+    font-family: "Poppins", sans-serif;
     font-style: normal;
     font-weight: 600;
     font-size: 28px;
@@ -119,7 +98,7 @@ div a {
 
 .section a {
 
-    font-family: 'Poppins';
+    font-family: "Poppins", sans-serif;
     font-style: normal;
     font-weight: 600;
     font-size: 28px;
@@ -127,6 +106,5 @@ div a {
     letter-spacing: 0.05em;
 
     color: #EF7649;
-    ;
 
 }

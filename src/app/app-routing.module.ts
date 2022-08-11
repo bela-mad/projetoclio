@@ -16,9 +16,9 @@ import { SobreComponent } from './area-logada/sobre/sobre.component';
 import { RankingComponent } from './area-logada/ranking/ranking.component';
 import { EmConstrucaoComponent } from './core/em-construcao/em-construcao.component';
 
+
 const routes: Routes = [
-  
-  { path: '', component: LoginComponent },
+  { path: 'login', component: LoginComponent },
   { path: 'termos-condicoes', component: TermosCondicoesComponent },
   { path: 'cadastro', component: CadastroComponent },
   { path: 'alterar-senha', component: AlterarSenhaComponent },
@@ -27,6 +27,7 @@ const routes: Routes = [
   { path: 'inicio', component: InicioComponent },
   { path: 'sobre', component: SobreComponent },
   { path: 'alterar-museus', component: AlterarMuseusComponent },
+
   { path: 'politica-privacidade', component: PoliticaPrivacidadeComponent },
   { path: 'cadastro-museus', component: CadastroMuseusComponent },
   { path: 'moderacao-avaliacoes', component: ModeracaoAvaliacoesComponent },

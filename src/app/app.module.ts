@@ -20,6 +20,8 @@ import { PoliticaPrivacidadeComponent } from './core/politica-privacidade/politi
 import { MuseusComponent } from './area-logada/museus/museus.component';
 import { RankingComponent } from './area-logada/ranking/ranking.component';
 import { EmConstrucaoComponent } from './core/em-construcao/em-construcao.component';
+import { SobreComponent } from './area-logada/sobre/sobre.component';
+import { InicioComponent } from './area-logada/inicio/inicio.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -38,6 +40,8 @@ import { EmConstrucaoComponent } from './core/em-construcao/em-construcao.compon
     MuseusComponent,
     RankingComponent,
     EmConstrucaoComponent,
+    SobreComponent,
+    InicioComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, MatInputModule, HttpClientModule],
   providers: [],
