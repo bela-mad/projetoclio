@@ -4,7 +4,7 @@
   class="navbar align-self-center justify-content-between"
   style="background-color: #04889f"
 >
-  <a href="inicio">
+  <a href="inicio" routerLink="/inicio">
     <img
       src="assets/logo_clio.png"
       width="125"
@@ -14,10 +14,10 @@
   </a>
   <div class="navbar-nav">
     <ul>
-      <li><a class="nav-item nav-link" href="inicio">INÍCIO</a></li>
-      <li><a class="nav-item nav-link" href="museus">MUSEUS</a></li>
-      <li><a class="nav-item nav-link" href="ranking">RANKING</a></li>
-      <li><a class="nav-item nav-link" href="sobre">SOBRE</a></li>
+      <li><a class="nav-item nav-link" routerLink="/inicio">INÍCIO</a></li>
+      <li><a class="nav-item nav-link" routerLink="/museus">MUSEUS</a></li>
+      <li><a class="nav-item nav-link" routerLink="/ranking">RANKING</a></li>
+      <li><a class="nav-item nav-link" routerLink="/sobre">SOBRE</a></li>
     </ul>
   </div>
 
@@ -43,7 +43,7 @@
     </div> -->
 
     <!-- Quando configurar o ngIf, retirar o código abaixo -->
-  <a href="">
+  <a routerLink="/perfil-visitante">
     <img
       src="assets/avatar_user.png"
       width="80"
