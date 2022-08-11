@@ -1,3 +1,4 @@
+import { HttpClientModule } from '@angular/common/http';
 import { PerfilAdminComponent } from './area-logada/perfis/perfil-admin/perfil-admin.component';
 import { AlterarMuseusComponent } from './area-logada/admin/alterar-museus/alterar-museus.component';
 import { LoginComponent } from './area-deslogada/login/login.component';
@@ -42,7 +43,7 @@ import { InicioComponent } from './area-logada/inicio/inicio.component';
     SobreComponent,
     InicioComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule, MatInputModule],
+  imports: [BrowserModule, AppRoutingModule, MatInputModule, HttpClientModule],
   providers: [],
   bootstrap: [AppComponent],
 })
