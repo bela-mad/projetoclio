@@ -17,51 +17,166 @@
   color: white;
   margin: 0;
   padding-top: 8%;
-  padding-bottom: 6%;
+  padding-bottom: 2%;
 }
 
 /* Dropdown */
 
-/* .dropdown {
-  float: right;
-  width: 190px;
-  height: 58px;
-  padding-top: 0.3rem;
-  padding-left: 1.7rem;
-  margin-right: 155px;
+/* Style The Dropdown Button */
+
+.dropbtn {
   background-color: #9ad0cb;
-  color: white;
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  border: none;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  border-radius: 50px;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 18px;
+  margin-left: 1020px;
+  padding: 18px 40px;
+  color: white;
 }
 
-.dropdown a {
-    font-size: 23px;
-} */
-
+/* The container <div> - needed to position the dropdown content */
 .dropdown {
-  float: right;
-  width: 190px;
-  height: 58px;
-  text-align: center;
-  font-size: 20px;
-  margin-right: 155px;
-  padding-top: 1.2rem;
-  background-color: #9ad0cb;
-  color: white;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  border-radius: 50px;
+  display: inline-block;
 }
 
+/* Dropdown Content (Hidden by Default) */
 .dropdown-content {
   display: none;
   position: absolute;
-  background-color: #9ad0cb;
-  min-width: 160px;
+  border-radius: 15px;
+  background-color: #f9f9f9;
+  min-width: 220px;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-  padding: 12px 16px;
+  z-index: 1;
+  margin-top: 2px;
+  margin-left: 970px;
 }
 
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  font-size: 12px;
+  text-decoration: none;
+  display: block;
+  border-radius: 15px;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
+
+/* Show the dropdown menu on hover */
 .dropdown:hover .dropdown-content {
   display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+  background-color: #ef7649;
+}
+
+/* Moderação */
+
+.box-moderacao {
+  width: 1100px;
+  margin-top: 48px;
+  margin-left: 125px;
+  margin-bottom: 100px;
+  padding: 40px 50px 50px 50px;
+  background-color: #9ad0cb;
+  border-radius: 30px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.row {
+  display: flex;
+  margin: 0;
+}
+
+.heading-box-moderacao {
+  font-weight: 800;
+  font-size: 22px;
+  text-align: start;
+  letter-spacing: 0.1em;
+  color: #ffffff;
+}
+
+.nome-usuario {
+  font-weight: 800;
+  font-size: 20px;
+  text-align: start;
+  margin-bottom: 0.5rem;
+  letter-spacing: 0.1em;
+  color: #ffffff;
+}
+
+.img-box-moderacao {
+  width: 140px;
+  height: 30px;
+  margin-left: 20px;
+  margin-bottom: 1rem;
+}
+
+.lixeira {
+  width: 35px;
+  height: 35px;
+  margin-left: 40rem;
+}
+
+.text-box-moderacao {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 30px;
+  text-align: justify;
+  letter-spacing: 0.05em;
+  color: #ffffff;
+}
+
+.botao-cancelar {
+  width: 160px;
+  height: 50px;
+  font-weight: 600;
+  font-size: 20px;
+  letter-spacing: 0.05em;
+  background: #ffffff;
+  margin: 2rem 0rem 0rem 40rem;
+  color: #000000;
+  border: 0;
+  border-radius: 15px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.botao-confirmar {
+  float: right;
+  width: 160px;
+  height: 50px;
+  font-weight: 600;
+  font-size: 20px;
+  letter-spacing: 0.05em;
+  margin: 2rem 0.5rem 0rem 0rem;
+  background: #ef7649;
+  color: #ffffff;
+  border: 0;
+  border-radius: 15px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+/* Denúncias */
+
+.heading-denuncias {
+  text-align: center;
+  letter-spacing: 0.05em;
+  font-size: 48px;
+  line-height: 72px;
+  font-weight: 800;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  color: white;
+  margin: 0;
+  padding-bottom: 4%;
 }
