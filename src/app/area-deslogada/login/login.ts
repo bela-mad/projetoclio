@@ -1,5 +1,5 @@
-export interface Login {
-  email: String;
-  senha: String;
+export class Login {
+  email: String = '';
+  senha: String = '';
 
 }

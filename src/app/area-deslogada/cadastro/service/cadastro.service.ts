@@ -3,20 +3,16 @@ import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs/internal/Observable';
 import { Cadastro } from '../cadastro';
 
-
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
 export class CadastroService {
- 
+  constructor(private http: HttpClient) {}
 
-constructor(private http: HttpClient) { 
-
-}
-
-inserirCadastro(cadastro:Cadastro) : Observable<Cadastro>{
-  return this.http.post<Cadastro>('http://api-passaporteclio.herokuapp.com/visitante', cadastro);
-
-}
-
+  inserirCadastro(cadastro: Cadastro): Observable<Cadastro> {
+    return this.http.post<Cadastro>(
+      'http://api-passaporteclio.herokuapp.com/visitante',
+      cadastro
+    );
+  }
 }

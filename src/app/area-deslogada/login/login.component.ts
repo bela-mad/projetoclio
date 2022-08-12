@@ -8,15 +8,13 @@ import { Login } from 'src/app/area-deslogada/login/login';
   styleUrls: ['./login.component.css'],
 })
 export class LoginComponent implements OnInit {
-  logins = [] as any;
-
   login: Login = {
     email: '',
     senha: '',
   };
 
   constructor(private service: LoginService) {
-    // this.login = new Login();
+    this.login = new Login();
   }
 
   ngOnInit(): void {}

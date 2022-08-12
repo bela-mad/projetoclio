@@ -1,3 +1,9 @@
-<p>
-  museu works!
-</p>
+<img
+  mat-card-image
+  src="{{ museu.thumbnail.path }}.{{ museu.thumbnail.extension }}"
+  alt="{{ museu.name }}"
+  (click)="openDetalhes('personagem', museu)"/>
+
+<div (click)="openDetalhes('personagem', museu)">
+  <div class="name">{{ museu.name }}</div>
+</div>
