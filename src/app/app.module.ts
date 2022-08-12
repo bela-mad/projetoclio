@@ -6,6 +6,7 @@ import { CadastroComponent } from './area-deslogada/cadastro/cadastro.component'
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { MatInputModule } from '@angular/material/input';
+import { FormsModule } from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -45,7 +46,7 @@ import { DetalhesMuseuComponent } from './area-logada/museus/museu/detalhes-muse
     InicioComponent,
     DetalhesMuseuComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule, MatInputModule, HttpClientModule],
+  imports: [BrowserModule, AppRoutingModule, MatInputModule, HttpClientModule, FormsModule],
   providers: [],
   bootstrap: [AppComponent],
 })
