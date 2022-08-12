@@ -22,27 +22,27 @@
 
             <h1 class="title">CADASTRAR:</h1>
 
-            <div class="form-floating mb-3">
-                <input type="text" class="form-control" required="required" id="floatingInput" placeholder="Nome" style="font-family: Poppins; font-size: 15px;padding-left: 10px;">
+            <div class="form-floating mb-3"  clienteForm="ngForm" (ngSubmit)="onSubmit()" >
+                <input type="text" class="form-control" required="required" id="floatingInput" [(ngModel)] = "cadastro.nome" placeholder="Nome" style="font-family: Poppins; font-size: 15px;padding-left: 10px;">
                 <label for="floatingInput">Nome</label>
               </div>
-              <div class="form-floating">
-                <input type="text" class="form-control" required="required" id="floatingPassword" placeholder="Sobrenome" style="font-family: Poppins; font-size: 15px;padding-left: 10px;">
+              <div class="form-floating" clienteForm="ngForm" (ngSubmit)="onSubmit()">
+                <input type="text" class="form-control" required="required" id="floatingPassword" [(ngModel)] = "cadastro.sobrenome" placeholder="Sobrenome" style="font-family: Poppins; font-size: 15px;padding-left: 10px;">
                 <label for="floatingPassword">Sobrenome</label>
               </div>
-              <div class="form-floating">
-                <input type="email" class="form-control" required="required" id="floatingPassword" placeholder="Email" style="font-family: Poppins; font-size: 15px;padding-left: 10px;">
+              <div class="form-floating" clienteForm="ngForm" (ngSubmit)="onSubmit()">
+                <input type="email" class="form-control" required="required" id="floatingPassword" [(ngModel)] = "cadastro.email" placeholder="Email" style="font-family: Poppins; font-size: 15px;padding-left: 10px;">
                 <label for="floatingPassword">Email</label>
               </div>
-              <div class="form-floating">
-                <input type="password" class="form-control" required="required" id="floatingPassword" placeholder="Senha" style="font-family: Poppins; font-size: 15px;padding-left: 10px;">
+              <div class="form-floating" clienteForm="ngForm" (ngSubmit)="onSubmit()">
+                <input type="password" class="form-control" required="required" id="floatingPassword" [(ngModel)] = "cadastro.senha" placeholder="Senha" style="font-family: Poppins; font-size: 15px;padding-left: 10px;">
                 <label for="floatingPassword">Senha</label>
               </div>
 
               
             <div class="button">
 
-                <button type="submit" value="cadastrar">CADASTRAR</button>
+                <button type="submit" value="cadastrar" routerLink="/inicio">CADASTRAR</button>
 
             </div>
 
