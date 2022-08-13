@@ -11,14 +11,13 @@
  */
 import { Link } from './link';
 
-export interface EnderecoDto { 
+export class EnderecoDto { 
     id?: number;
-    cep: string;
-    rua: string;
-    numero: number;
-    bairro: string;
-    cidade: string;
-    estado: string;
-    pais: string;
-    links?: Array<Link>;
-}
+    cep: string = '';
+    rua: string = '';
+    numero: number = 0;
+    bairro: string = '';
+    cidade: string = '';
+    estado: string = '';
+    pais: string = '';
+ }

@@ -13,7 +13,7 @@ export class NavBarComponent implements OnInit {
   }
 
   perfilAdmnistrativo() : boolean{
-    var emailUsuarioLogado: string = this.tokenStorage.getUser()
+    var emailUsuarioLogado: string = this.tokenStorage.getUserEmail()
 
     if(emailUsuarioLogado == "admin@email.com"){
       return true

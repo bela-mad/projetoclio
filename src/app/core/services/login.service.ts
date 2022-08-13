@@ -16,7 +16,7 @@ export class LoginService {
         this.authService.login(email, senha).subscribe(
           (data:any) => {
             this.tokenStorage.saveToken(data.token)
-            this.tokenStorage.saveUser(email)
+            this.tokenStorage.saveUser(data.username, data.userId)
             executor(true)
           }, 
           (error: any) => {

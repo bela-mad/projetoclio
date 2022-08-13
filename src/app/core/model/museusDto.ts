@@ -12,14 +12,14 @@
 import { EnderecoDto } from './enderecoDto';
 import { Link } from './link';
 
-export interface MuseusDto { 
+export class MuseusDto { 
     id?: number;
-    nome: string;
-    descricaoMuseu: string;
-    funcionamentoMuseu: string;
-    urlFoto: string;
-    urlSite: string;
-    urlInstagram: string;
-    endereco?: EnderecoDto;
-    links?: Array<Link>;
+    nome: string = '';
+    descricaoMuseu: string= '';
+    funcionamentoMuseu: string= '';
+    urlFoto: string = '';
+    urlSite: string = '';
+    urlInstagram: string = '';
+    endereco: EnderecoDto = new EnderecoDto ;
+   
 }

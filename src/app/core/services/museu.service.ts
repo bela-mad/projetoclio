@@ -20,4 +20,14 @@ export class MuseuService {
      });
     return this.http.post(baseUrl, data, {headers: reqHeader});
   }
+
+  findAll(token:any):Observable<any>{
+    console.log(token)
+    var reqHeader = new HttpHeaders({ 
+      'Content-Type': 'application/json',
+      'Authorization': 'Bearer ' + token
+   });
+   return this.http.get(baseUrl, {headers: reqHeader});
+  }
+
 }
