@@ -3,82 +3,160 @@
 
   <h1 class="heading-cadastro-museu">CADASTRAR MUSEU</h1>
 
-  <form action="">
+  <form>
     <div class="column">
-      <label for="">URL DA IMAGEM:</label> <br />
-      <input type="text" />
+      <label for="urlFoto">URL DA IMAGEM:</label> <br />
+      <input 
+        type="text" 
+        class="form-control" 
+        id="urlFoto" 
+        [(ngModel)]="museu.urlFoto"
+        name="urlFoto"
+      />
     </div>
     <p class="text-formato">Formato jpeg/png (tamanho mín. 1440x604 px)</p>
 
     <div class="column">
-      <label for="">NOME DO MUSEU:</label> <br />
-      <input type="text" />
+      <label for="nome">NOME DO MUSEU:</label> <br />
+      <input 
+        type="text" 
+        class="form-control" 
+        id="nome" 
+        [(ngModel)]="museu.nome"
+        name="nome"
+      />
     </div>
 
     <div class="column">
-      <label for="">DESCRIÇÃO:</label> <br />
-      <input type="text" />
+      <label for="descricaoMuseu">DESCRIÇÃO:</label> <br />
+      <input 
+        type="text" 
+        class="form-control" 
+        id="descricaoMuseu" 
+        [(ngModel)]="museu.descricaoMuseu"
+        name="descricaoMuseu"
+      />
     </div>
 
     <div class="column">
-      <label for="">HORÁRIOS DE FUNCIONAMENTO:</label> <br />
-      <input type="text" />
+      <label for="funcionamentoMuseu">HORÁRIOS DE FUNCIONAMENTO:</label> <br />
+      <input 
+        type="text" 
+        class="form-control" 
+        id="funcionamentoMuseu" 
+        [(ngModel)]="museu.funcionamentoMuseu"
+        name="funcionamentoMuseu"
+      />
     </div>
 
     <h2 class="text-h2">CONTATO:</h2>
     <div class="row">
       <div class="column">
-        <label for="">SITE OFICIAL:</label> <br />
-        <input type="text" />
+        <label for="urlSite">SITE OFICIAL:</label> <br />
+          <input 
+          type="text" 
+          class="form-control" 
+          id="urlSite" 
+          [(ngModel)]="museu.urlSite"
+          name="urlSite"
+        />
       </div>
       <div class="column">
-        <label for="">INSTAGRAM:</label> <br />
-        <input type="text" />
+        <label for="urlInstagram">INSTAGRAM:</label> <br />
+        <input 
+          type="text" 
+          class="form-control" 
+          id="urlInstagram" 
+          [(ngModel)]="museu.urlInstagram"
+          name="urlInstagram"
+        />
       </div>
     </div>
 
     <h2 class="text-h2">ENDEREÇO:</h2>
     <div class="row">
       <div class="column">
-        <label for="">LOGRADOURO:</label> <br />
-        <input type="text" />
+        <label for="rua">LOGRADOURO:</label> <br />
+        <input 
+          type="text" 
+          class="form-control" 
+          id="rua" 
+          [(ngModel)]="endereco.rua"
+          name="rua"
+        />
       </div>
       <div class="column">
-        <label for="">NÚMERO:</label> <br />
-        <input type="text" />
-      </div>
-    </div>
-
-    <div class="row">
-      <div class="column">
-        <label for="">CEP:</label> <br />
-        <input type="text" />
-      </div>
-      <div class="column">
-        <label for="">BAIRRO:</label> <br />
-        <input type="text" />
-      </div>
-    </div>
-
-    <div class="row">
-      <div class="column">
-        <label for="">CIDADE:</label> <br />
-        <input type="text" />
-      </div>
-      <div class="column">
-        <label for="">ESTADO:</label> <br />
-        <input type="text" />
+        <label for="numero">NÚMERO:</label> <br />
+        <input 
+          type="number" 
+          class="form-control" 
+          id="numero" 
+          [(ngModel)]="endereco.numero"
+          name="numero"
+        />
       </div>
     </div>
 
     <div class="row">
       <div class="column">
-        <label for="">PAÍS:</label> <br />
-        <input type="text" />
+        <label for="cep">CEP:</label> <br />
+        <input 
+          type="text" 
+          class="form-control" 
+          id="cep" 
+          [(ngModel)]="endereco.cep"
+          name="cep"
+        />
+      </div>
+      <div class="column">
+        <label for="bairro">BAIRRO:</label> <br />
+        <input 
+          type="text" 
+          class="form-control" 
+          id="bairro" 
+          [(ngModel)]="endereco.bairro"
+          name="bairro"
+        />
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="column">
+        <label for="cidade">CIDADE:</label> <br />
+        <input 
+          type="text" 
+          class="form-control" 
+          id="cidade" 
+          [(ngModel)]="endereco.cidade"
+          name="cidade"
+        />
+      </div>
+      <div class="column">
+        <label for="estado">ESTADO:</label> <br />
+        <input 
+          type="text" 
+          class="form-control" 
+          id="estado" 
+          [(ngModel)]="endereco.estado"
+          name="estado"
+        />
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="column">
+        <label for="pais">PAÍS:</label> <br />
+        <input 
+          type="text" 
+          class="form-control" 
+          id="pais" 
+          [(ngModel)]="endereco.pais"
+          name="pais"
+        />
       </div>
     </div>
     <button class="botao-limpar" type="reset">LIMPAR</button>
-    <button class="botao-submeter" type="submit">SUBMETER</button>
+    <button class="botao-submeter" (click)="cadastrarMuseu()">SUBMETER</button>
   </form>
 
   <div class="chamada-acao">

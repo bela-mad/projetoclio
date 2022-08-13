@@ -1,3 +1,4 @@
+import { MuseuComponent } from './area-logada/museus/museu/museu.component';
 import { HttpClientModule } from '@angular/common/http';
 import { PerfilAdminComponent } from './area-logada/perfis/perfil-admin/perfil-admin.component';
 import { AlterarMuseusComponent } from './area-logada/admin/alterar-museus/alterar-museus.component';
@@ -6,7 +7,7 @@ import { CadastroComponent } from './area-deslogada/cadastro/cadastro.component'
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { MatInputModule } from '@angular/material/input';
-import { FormsModule } from '@angular/forms';
+import { FormsModule } from "@angular/forms";
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -45,6 +46,7 @@ import { DetalhesMuseuComponent } from './area-logada/museus/museu/detalhes-muse
     SobreComponent,
     InicioComponent,
     DetalhesMuseuComponent,
+    MuseuComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, MatInputModule, HttpClientModule, FormsModule],
   providers: [],

@@ -1,15 +1,22 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
-  selector: 'app-museu',
+  selector: 'museu',
   templateUrl: './museu.component.html',
-  styleUrls: ['./museu.component.css']
+  styleUrls: ['./museu.component.css'],
 })
 export class MuseuComponent implements OnInit {
+  @Input() museu: any;
 
-  constructor() { }
+  constructor(private router: Router) {}
 
-  ngOnInit() {
+  openDetalhes(pagename: string, museu: any): void {
+    this.router.navigate([`${pagename}`], {
+      state: museu,
+      replaceUrl: true,
+    });
   }
 
+  ngOnInit(): void {}
 }

@@ -21,18 +21,20 @@
     </ul>
   </div>
 
-  <!-- <div *ngIf="{perfil}="Visitante"">
-      <a href="">
+  <div *ngIf="!perfilAdmnistrativo()">
+      <a href="perfil-visitante">
         <img
           src="assets/avatar_user.png"
           width="80"
           height="80"
           alt="Avatar do user"
+
         />
       </a>
     </div>
-    <div *ngIf="{perfil}="Administrador"">
-      <a href="">
+
+    <div *ngIf="perfilAdmnistrativo()">
+      <a href="perfil-admin">
         <img
           src="assets/avatar_adm.png"
           width="80"
@@ -40,15 +42,15 @@
           alt="Avatar do administrador"
         />
       </a>
-    </div> -->
+    </div>
 
     <!-- Quando configurar o ngIf, retirar o código abaixo -->
-  <a routerLink="/perfil-visitante">
+  <!-- <a routerLink="/perfil-visitante">
     <img
       src="assets/avatar_user.png"
       width="80"
       height="80"
       alt="Avatar do user"
     />
-  </a>
+  </a> -->
 </nav>

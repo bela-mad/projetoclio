@@ -1,105 +1,91 @@
-
- 
 .cadastro {
-    width: 100%;
-    height: 100%;
-    padding-bottom: 100px;
-    font-family: "Poppins", sans-serif;
-    background-color: #04889F;
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-} 
- 
+  width: 100%;
+  font-family: "Poppins", sans-serif;
+  background-color: #04889f;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
 /* MAIN*/
- 
+
 .logo {
-    width: 150px;
-    height: 150px;
-    margin-top: 15px;
-    margin-left: 20px;
-    min-width:fit-content;
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  width: 150px;
+  height: 150px;
+  margin-top: 15px;
+  margin-left: 20px;
+  min-width: fit-content;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
- 
+
 .container {
- 
-    width: 400px;
-    height: 480px;
-    margin-top: 10px;
-    margin-left: 37%;
-    margin-right: 50%;
-    background: #E9F6FA;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    border-radius: 39px;
- 
+  width: 400px;
+  height: 480px;
+  margin-top: 10px;
+  margin-left: 37%;
+  margin-right: 50%;
+  margin-bottom: 100px;
+  background: #e9f6fa;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 39px;
 }
- 
- 
+
 .title {
- 
-    font-size: 35px;
-    line-height: 80px;
-    letter-spacing: 0.05em;
-    text-align: center;
-    color: #07889B;
-    margin-bottom: 10px;
-    margin-top: 10px;
-    font-weight: 800;
-    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  font-size: 35px;
+  line-height: 80px;
+  letter-spacing: 0.05em;
+  text-align: center;
+  color: #07889b;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  font-weight: 800;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
- 
-.form {
-    text-align: center;
+
+form {
+  text-align: center;
 }
- 
+
 .form-floating input {
- 
-    width: 270px;
-    height: 50px;
-    left: 474px;
-    top: 553px;
-    margin: 12px;
-    margin-left: 53px;
- 
-    background: #FFFFFF;
-    border: 1px solid #747474;
-    border-radius: 10px;
+  width: 270px;
+  height: 50px;
+  left: 474px;
+  top: 553px;
+  margin: 12px;
+  margin-left: 53px;
+  background: #ffffff;
+  border: 1px solid #747474;
+  border-radius: 10px;
 }
-.form-floating label{
-    margin-left: 50px;
+.form-floating label {
+  margin-left: 50px;
 }
 
 input::placeholder {
-    font-size: 14px;
-    padding: 20px;
-    font-style: italic;
- 
+  font-size: 14px;
+  padding: 20px;
+  font-style: italic;
 }
 
- 
 button {
-    width: 270px;
-    height: 45px;
-    left: 474px;
-    top: 1098px;
- 
-    background: #EF7649;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    border-radius: 10px;
-    margin: 30px;
-    border: none;
- 
-    font-size: 20px;
-    text-align: center;
-    letter-spacing: 0.05em;
- 
-    color: #FFFFFF;
+  width: 270px;
+  height: 45px;
+  left: 474px;
+  top: 1098px;
+  background: #ef7649;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  margin: 30px;
+  border: none;
+  font-size: 20px;
+  text-align: center;
+  letter-spacing: 0.05em;
+  color: #ffffff;
 }
- 
+
 .link {
-    font-style: normal;
-    margin-top: -15px;
-    font-size: 14px;
-    text-align: center;
-    letter-spacing: 0.05em;
-     
-    color: #000000;}
+  margin-top: -15px;
+  font-size: 14px;
+  text-align: center;
+  letter-spacing: 0.05em;
+
+  color: #000000;
+}
