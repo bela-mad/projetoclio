@@ -1,7 +1,7 @@
 import { Router } from '@angular/router';
 import { LoginForm } from './../../core/model/loginForm';
 import { Component, OnInit } from '@angular/core';
-import { LoginService } from 'src/app/area-deslogada/service/login.service';
+import { LoginService } from 'src/app/core/services/login.service';
 import { TokenStorageService } from 'src/app/core/services/token.storage.service';
 //import { Login } from 'src/app/area-deslogada/login/login';
 

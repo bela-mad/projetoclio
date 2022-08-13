@@ -1,4 +1,4 @@
-import { LoginForm } from './../../core/model/loginForm';
+import { LoginForm } from '../model/loginForm';
 import { Injectable } from '@angular/core';
 import { AuthService } from 'src/app/core/services/auth.service';
 import { TokenStorageService } from 'src/app/core/services/token.storage.service';
