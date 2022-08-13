@@ -1,0 +1,19 @@
+img.mat-card-image {
+  min-height: 304px;
+  max-height: 304px;
+  border: dimgray;
+}
+
+img.mat-card-image,
+.name:hover {
+  cursor: pointer;
+}
+
+.name {
+  font-size: 1rem;
+  color: black;
+  background-color: #f0e9e0;
+  font-weight: 600;
+  padding: 10px;
+  text-align: center;
+}

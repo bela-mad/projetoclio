@@ -16,12 +16,13 @@ export class AuthService {
   constructor(private http: HttpClient) {}
 
   login(email: string, senha: string): Observable<any> {
+    console.log("cheguei aqui")
     const data = {
         email: email,
         senha: senha
     }
 
-    return this.http.post(
+    return this.http.post<any>(
       AUTH_API, data, httpOptions
     );
   }

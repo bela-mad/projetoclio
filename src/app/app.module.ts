@@ -1,3 +1,4 @@
+import { MuseuComponent } from './area-logada/museus/museu/museu.component';
 import { HttpClientModule } from '@angular/common/http';
 import { PerfilAdminComponent } from './area-logada/perfis/perfil-admin/perfil-admin.component';
 import { AlterarMuseusComponent } from './area-logada/admin/alterar-museus/alterar-museus.component';
@@ -45,6 +46,7 @@ import { DetalhesMuseuComponent } from './area-logada/museus/museu/detalhes-muse
     SobreComponent,
     InicioComponent,
     DetalhesMuseuComponent,
+    MuseuComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, MatInputModule, HttpClientModule, FormsModule],
   providers: [],

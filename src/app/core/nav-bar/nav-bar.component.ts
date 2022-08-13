@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { TokenStorageService } from '../services/token.storage.service';
 
 @Component({
   selector: 'app-nav-bar',
@@ -6,10 +7,19 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./nav-bar.component.css']
 })
 export class NavBarComponent implements OnInit {
-
-  constructor() { }
+  constructor(private tokenStorage: TokenStorageService) { }
 
   ngOnInit() {
+  }
+
+  perfilAdmnistrativo() : boolean{
+    var emailUsuarioLogado: string = this.tokenStorage.getUser()
+
+    if(emailUsuarioLogado == "admin@email.com"){
+      return true
+    }else{
+      return false
+    }
   }
 
 }

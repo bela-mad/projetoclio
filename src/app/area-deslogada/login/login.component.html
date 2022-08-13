@@ -24,8 +24,8 @@
         Bem-vindes ao Passaporte Clio! Aqui você terá a oportunidade de conhecer
         um pouco mais sobre museus do estado de São Paulo e ter contato com
         espaços marcantes da cultura do nosso país. Não existe lugar melhor do
-        que um museu para abrir sua mente para novos horizontes...
-        Então embarque com a gente nessa aventura! Você poderá registrar as
+        que um museu para abrir sua mente para novos horizontes... Então
+        embarque com a gente nessa aventura! Você poderá registrar as
         instituições que conheceu e compartilhar com a comunidade como foi cada
         uma de suas visitas e, com isso, incentivar futuros viajantes a
         turistarem pela cultura. Tá esperando o que para carimbar seu
@@ -34,29 +34,33 @@
     </div>
   </div>
 
-  <form class="form-login">
+  <form #loginForm="ngForm" (ngSubmit)="onSubmit()" class="form-login">
     <h2 class="form-entrar">ENTRAR</h2>
     <div class="form-floating mb-3">
       <input
         type="email"
-        required
         class="form-control"
         id="floatingInput"
         placeholder="name@example.com"
+        [(ngModel)]="login.email"
+        name="email"
+        required
       />
       <label for="floatingInput">E-mail:</label>
     </div>
     <div class="form-floating">
       <input
         type="password"
-        required
         class="form-control"
         id="floatingPassword"
         placeholder="Password"
+        [(ngModel)]="login.senha"
+        name="senha"
+        required
       />
       <label for="floatingPassword">Senha:</label>
     </div>
-    <button type="submit">ENTRAR</button>
+    <button type="submit" class="btn btn-success">ENTRAR</button>
     <p>
       Novo por aqui? <a href="cadastro">Faça seu cadastro</a> <br />
       Esqueceu a senha? <a href="alterar-senha">Clique aqui</a>

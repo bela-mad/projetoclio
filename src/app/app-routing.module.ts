@@ -19,7 +19,7 @@ import { DetalhesMuseuComponent } from './area-logada/museus/museu/detalhes-muse
 
 
 const routes: Routes = [
-  { path: 'login', component: LoginComponent },
+  { path: '', component: LoginComponent },
   { path: 'termos-condicoes', component: TermosCondicoesComponent },
   { path: 'cadastro', component: CadastroComponent },
   { path: 'alterar-senha', component: AlterarSenhaComponent },

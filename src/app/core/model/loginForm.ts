@@ -10,7 +10,7 @@
  * Do not edit the class manually.
  */
 
-export interface LoginForm { 
-    email?: string;
-    senha?: string;
+export class LoginForm { 
+    email: string = '';
+    senha: string = '';
 }
