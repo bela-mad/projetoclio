@@ -42,5 +42,17 @@
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
-/* Mosaico de Museus (grid) */
+/* Cards de Museus */
 
+.card {
+  margin-top: 1.5rem;
+  background-color: snow;
+  color: #ffffff;
+  box-shadow: 0px 0px 8px gray;
+}
+
+.card:hover {
+  box-shadow: 0px 0px 25px gray;
+  border-width: 2px;
+  border-color: #ec1d23;
+}
