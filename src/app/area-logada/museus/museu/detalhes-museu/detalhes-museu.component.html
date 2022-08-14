@@ -1,20 +1,16 @@
-<app-nav-bar></app-nav-bar>
-
 <div class="detalhes-museu">
-
+  <app-nav-bar></app-nav-bar>
 
   <div class="img-museu">
-    <img src="" alt="">
+    <img src="" alt="" />
   </div>
 
-  <h1 class="nome-museu">{{nome}}</h1>
+  <h1 class="nome-museu">[(ngModel)]="museu.nome"</h1>
 
-  <div class="estrela-nota">{{nota}}</div>
+  <div class="estrela-nota">[(ngModel)]="museu.nota"</div>
 
   <div class="descricao">
-    <p>
-      {{descricaoMuseu}}
-    </p>
+    <p>[(ngModel)]="museu.descricaoMuseu"</p>
   </div>
 
   <div class="linha"></div>
@@ -22,7 +18,7 @@
   <h3>HORÁRIOS DE FUNCIONAMENTO</h3>
 
   <div class="funcionamento">
-    <p>{{funcionamentoMuseu}}</p>
+    <p>[(ngModel)]="museu.funcionamentoMuseu"</p>
   </div>
 
   <div class="linha"></div>
@@ -30,9 +26,13 @@
   <h3>ENDEREÇO</h3>
 
   <div class="endereco">
-    <p>{{rua}}, {{numero}} - {{bairro}}, {{estado}}, {{pais}}</p>
-    <br>
-    <p>{{cep}}</p>
+    <p>
+      [(ngModel)]="endereco.rua", [(ngModel)]="endereco.numero" -
+      [(ngModel)]="endereco.bairro", [(ngModel)]="endereco.estado",
+      [(ngModel)]="endereco.pais"
+    </p>
+    <br />
+    <p>[(ngModel)]="endereco.cep"</p>
   </div>
 
   <div class="linha"></div>
@@ -40,27 +40,33 @@
   <h3>MAIS INFORMAÇÕES</h3>
 
   <div class="mais-informacoes">
-    <img class="img1" src="assets/site_icone_branco.png" alt="">
-    <p class="p1">{{urlSite}}</p>
-    <img class="img2" src="assets/instagram_branco.png" alt="">
-    <p class="p2">{{urlInstagram}}</p>
+    <img class="img1" src="assets/site_icone_branco.png" alt="" />
+    <p class="p1">[(ngModel)]="museu.urlSite"</p>
+    <img class="img2" src="assets/instagram_branco.png" alt="" />
+    <p class="p2">[(ngModel)]="museu.urlInstagram"</p>
   </div>
 
   <div class="linha"></div>
 
-  <div class="estrela-avaliacao">{{avaliacao}}</div>
+  <!-- <div class="estrela-avaliacao">{{ avaliacao }}</div>
 
-  <input class="avaliacao" type="text" placeholder="{{avaliacao}}" style="font-family: Poppins; font-size: 15px;padding-left: 10px;padding-top: -100px;">
-  
+  <input
+    class="avaliacao"
+    type="text"
+    placeholder="{{ avaliacao }}"
+    style="
+      font-family: Poppins;
+      font-size: 15px;
+      padding-left: 10px;
+      padding-top: -100px;
+    "
+  /> -->
 
-    <button>AVALIAR</button>
-
+  <button>AVALIAR</button>
 
   <div class="comentarios">
     <h3 class="title">COMENTÁRIOS</h3>
   </div>
 
-
+  <app-footer></app-footer>
 </div>
-
-<app-footer></app-footer>

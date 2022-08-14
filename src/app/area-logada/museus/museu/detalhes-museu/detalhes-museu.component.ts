@@ -1,5 +1,7 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { ActivatedRoute } from '@angular/router';
+import { MuseusApiService } from '../../services/museus-api.service';
 
 @Component({
   selector: 'app-detalhes-museu',
@@ -7,30 +9,13 @@ import { Router } from '@angular/router';
   styleUrls: ['./detalhes-museu.component.css'],
 })
 export class DetalhesMuseuComponent implements OnInit {
-  nome: String = '';
-  descricaoMuseu: String = '';
-  funcionamentoMuseu: String = '';
-  urlFoto: String = '';
-  urlSite: String = '';
-  urlInstagram: String | undefined;
-  endereco: String = '';
-  cep: String = '';
-  rua: String = '';
-  numero: String = '';
-  bairro: String = '';
-  cidade: String = '';
-  estado: String = '';
-  pais: String = '';
-  avaliacao: String = '';
-  nota: String = '';
- 
+  museu: any = {};
 
   constructor(private router: Router) {
-    /*if (this.router.getCurrentNavigation().extras?.state != null) {
-      this.museu = this.router.getCurrentNavigation().extras.state;
-    }*/
+    // if (this.router.getCurrentNavigation().extras?.state != null) {
+    //   this.museu = this.router.getCurrentNavigation().extras.state;
+    // }
   }
-  
 
-  ngOnInit() {}
+  ngOnInit(): void {}
 }

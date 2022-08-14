@@ -7,23 +7,22 @@
     <input
       class="input-buscar"
       type="search"
-      name=""
       id="search"
       name="museuProcurado"
       placeholder="Buscar:"
       #museuProcurado
-      required
       (keyup)="getMuseu(museuProcurado.value)"
+      required
     />
   </form>
 
-  <!-- <div class="container">
+  <div class="container">
     <div class="row justify-content-md-center">
       <div class="col-3" *ngFor="let museu of allMuseus | async">
-          <app-museu class="card" [museu]="museu"></app-museu>
+          <museu class="card" [museu]="museu"></museu>
       </div>
     </div>
-  </div> -->
+  </div>
 
   <app-footer></app-footer>
 </div>
