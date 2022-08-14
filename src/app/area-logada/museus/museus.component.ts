@@ -1,17 +1,16 @@
 import { Component, OnInit } from '@angular/core';
 import { Observable } from 'rxjs';
-import { MuseusApiService } from 'src/app/area-logada/museus/services/museus-api.service';
+import { MuseusApiService } from './services/museus-api.service';
 
 @Component({
   selector: 'app-museus',
   templateUrl: './museus.component.html',
-  styleUrls: ['./museus.component.css']
+  styleUrls: ['./museus.component.css'],
 })
 export class MuseusComponent implements OnInit {
+  constructor(private museuSvc: MuseusApiService) {}
 
-  constructor(private museuSvc: MuseusApiService) { }
-
-  allMuseus : Observable<any> | undefined;
+  allMuseus!: Observable<any>;
 
   ngOnInit(): void {
     this.getMuseus();
@@ -21,12 +20,11 @@ export class MuseusComponent implements OnInit {
     this.allMuseus = this.museuSvc.getAllMuseus();
   }
 
-  getMuseu(museuBuscado: string | undefined) {
-    if (museuBuscado === "" || museuBuscado === undefined) {
+  getMuseu(museuBuscado: string) {
+    if (museuBuscado === '' || museuBuscado === undefined) {
       return this.getMuseus();
     } else {
       this.allMuseus = this.museuSvc.getAllMuseusPorNome(museuBuscado);
     }
   }
 }
-

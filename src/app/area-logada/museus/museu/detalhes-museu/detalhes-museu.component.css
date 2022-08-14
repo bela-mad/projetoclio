@@ -1,5 +1,5 @@
 .detalhes-museu {
-  background-color: #83C5BE;
+  background-color: #83c5be;
   position: relative;
   font-family: "Poppins", sans-serif;
   padding-bottom: 100px;
@@ -40,11 +40,10 @@
   text-align: justify;
   letter-spacing: 0.05em;
 
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .detalhes-museu h3 {
-
   font-style: normal;
   font-weight: 800;
   font-size: 24px;
@@ -54,7 +53,7 @@
   text-align: left;
   letter-spacing: 0.1em;
 
-  color: #FFFFFF;
+  color: #ffffff;
 
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
@@ -68,7 +67,7 @@
   text-align: justify;
   letter-spacing: 0.05em;
 
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .endereco p {
@@ -80,10 +79,10 @@
   text-align: justify;
   letter-spacing: 0.05em;
 
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
-.mais-informacoes .p1{
+.mais-informacoes .p1 {
   margin-left: 160px;
   margin-top: -40px;
   font-style: normal;
@@ -93,10 +92,10 @@
   text-align: justify;
   letter-spacing: 0.05em;
 
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
-.mais-informacoes .p2{
+.p2 {
   margin-left: 160px;
   margin-top: -40px;
   font-style: normal;
@@ -106,14 +105,14 @@
   text-align: justify;
   letter-spacing: 0.05em;
 
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
-.mais-informacoes .img1 {
+.img1 {
   margin-left: 100px;
 }
 
-.mais-informacoes .img2 {
+.img2 {
   margin-left: 106px;
 }
 
@@ -125,62 +124,56 @@
 }
 
 .avaliacao {
-width: 800px;
-height: 204px;
-margin: 20px 23%;
-background: rgba(233, 246, 250, 0.23);
-border: none;
-border-radius: 40px;
+  width: 800px;
+  height: 204px;
+  margin: 20px 23%;
+  background: rgba(233, 246, 250, 0.23);
+  border: none;
+  border-radius: 40px;
 }
 
+button {
+  width: 120px;
+  height: 45px;
 
+  background: #ef7649;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 20px;
+  margin: 30px 45%;
+  border: none;
 
-button  {
-    width: 120px;
-    height: 45px;
-    
- 
-    background: #EF7649;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    border-radius: 20px;
-    margin: 30px 45%;
-    border: none;
-    
-    font-size: 20px;
-    text-align: center;
-    letter-spacing: 0.05em;
- 
-    color: #FFFFFF;
+  font-size: 20px;
+  text-align: center;
+  letter-spacing: 0.05em;
+
+  color: #ffffff;
 }
 
 .comentarios {
   width: 1000px;
-height: 500px;
-margin: 30px 250px ;
+  height: 500px;
+  margin: 30px 250px;
 
-background: rgba(237, 246, 249, 0.22);
-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-border-radius: 12px;
+  background: rgba(237, 246, 249, 0.22);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 12px;
 }
 
 .title {
-
   font-style: normal;
-font-weight: 800;
-font-size: 30px;
-line-height: 45px;
-padding: 25px 0px;
-letter-spacing: 0.1em;
+  font-weight: 800;
+  font-size: 30px;
+  line-height: 45px;
+  padding: 25px 0px;
+  letter-spacing: 0.1em;
 
-color: #FFFFFF;
+  color: #ffffff;
 }
 
-
 .linha {
-
   width: 1342px;
   height: 0px;
   margin: 50px 80px;
 
-  border: 1px solid #FFFFFF;
+  border: 1px solid #ffffff;
 }
