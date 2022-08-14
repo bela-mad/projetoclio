@@ -3,11 +3,9 @@ export class Cadastro{
     sobrenome:string = '';
     email:string = '';
     senha:string = '';
-   
- 
 
         constructor(){
 
         }
-      
+
 }
