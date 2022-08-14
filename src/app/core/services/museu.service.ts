@@ -22,12 +22,26 @@ export class MuseuService {
   }
 
   findAll(token:any):Observable<any>{
-    console.log(token)
     var reqHeader = new HttpHeaders({ 
       'Content-Type': 'application/json',
       'Authorization': 'Bearer ' + token
-   });
-   return this.http.get(baseUrl, {headers: reqHeader});
+    });
+    return this.http.get(baseUrl, {headers: reqHeader});
   }
 
+  findById(id:any, token:any):Observable<any>{
+    var reqHeader = new HttpHeaders({ 
+      'Content-Type': 'application/json',
+      'Authorization': 'Bearer ' + token
+    });
+    return this.http.get(baseUrl + "/" + id, {headers: reqHeader});
+  }
+
+  atualizarMuseus(id:any, data:any, token:any):Observable<any>{
+    var reqHeader = new HttpHeaders({ 
+      'Content-Type': 'application/json',
+      'Authorization': 'Bearer ' + token
+    });
+    return this.http.put(baseUrl + "/" + id, data, {headers: reqHeader});
+  }
 }
