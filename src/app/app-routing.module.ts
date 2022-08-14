@@ -27,7 +27,7 @@ const routes: Routes = [
   { path: 'perfil-visitante', component: PerfilVisitanteComponent },
   { path: 'inicio', component: InicioComponent },
   { path: 'sobre', component: SobreComponent },
-  { path: 'alterar-museus', component: AlterarMuseusComponent },
+  { path: 'alterar-museus/:id', component: AlterarMuseusComponent },
 
   { path: 'politica-privacidade', component: PoliticaPrivacidadeComponent },
   { path: 'cadastro-museus', component: CadastroMuseusComponent },

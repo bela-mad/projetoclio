@@ -146,6 +146,51 @@ div a {
     background-color: #EF7649;
 }
 
+.heading-box-moderacao {
+    font-weight: 800;
+    font-size: 22px;
+    text-align: start;
+    letter-spacing: 0.1em;
+    color: #ffffff;
+  }
+
+.box-moderacao {
+    width: 1100px;
+    margin-top: 48px;
+    margin-left: 125px;
+    margin-bottom: 100px;
+    padding: 40px 50px 50px 50px;
+    background-color: #9ad0cb;
+    border-radius: 30px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.row {
+    display: flex;
+    margin: 0;
+}
+
+.img-box-moderacao {
+    width: 140px;
+    height: 30px;
+    margin-right: auto;
+    margin-bottom: 1rem;
+}
+  
+.lixeira {
+    width: 35px;
+    height: 35px;
+    margin-left: auto;
+}
+  
+.text-box-moderacao {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 30px;
+    text-align: justify;
+    letter-spacing: 0.05em;
+    color: #ffffff;
+}
 
 .coments {
     width: 1100px;

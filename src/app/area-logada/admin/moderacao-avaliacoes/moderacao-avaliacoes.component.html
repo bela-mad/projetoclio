@@ -6,64 +6,45 @@
   <div class="dropdown">
     <button class="dropbtn">MUSEUS 🡫</button>
     <div class="dropdown-content">
-      <a href="#">MUSEU DA LÍNGUA PORTUGUESA</a>
-      <a href="#">PINACOTECA</a>
-      <a href="#">MUSEU AFRO BRASIL</a>
-      <a href="#">MUSEU DA CASA BRASILEIRA</a>
-      <a href="#">MUSEU DA IMIGRAÇÃO</a>
-      <a href="#">MUSEU DA DIVERSIDADE SEXUAL</a>
-      <a href="#">MEMORIAL DA RESISTÊNCIA</a>
-      <a href="#">MUSEU CATAVENTO</a>
-      <a href="#">MUSEU DO FUTEBOL</a>
+      <a *ngFor="let i of listaMuseus" (click)="buscarInformacoesMuseuSelecionado(i)">{{ i.nome }}</a>
     </div>
   </div>
 
   <form class="box-moderacao">
     <h2 class="heading-box-moderacao">COMENTÁRIOS</h2>
-    <div class="row">
-      <h3 class="nome-usuario column">nome - usuario</h3>
-      <img
-        class="img-box-moderacao column"
-        src="assets/estrelas_avaliacao.png"
-        alt=""
-      />
-      <!-- <button type="button"> -->
-        <img class="lixeira column" src="assets/deletar_icone.png" alt="" />
-      <!-- </button> -->
+    <div *ngFor="let item of listaAvaliacoes" class="row">
+      <div class="row">
+        <img *ngIf="item.nota === 1" class="img-box-moderacao column" src="assets/estrelas_avaliacao_1.png" alt="" />
+        <img *ngIf="item.nota === 2" class="img-box-moderacao column" src="assets/estrelas_avaliacao_2.png" alt="" />
+        <img *ngIf="item.nota === 3" class="img-box-moderacao column" src="assets/estrelas_avaliacao_3.png" alt="" />
+        <img *ngIf="item.nota === 4" class="img-box-moderacao column" src="assets/estrelas_avaliacao_4.png" alt="" />
+        <img *ngIf="item.nota === 5" class="img-box-moderacao column" src="assets/estrelas_avaliacao_5.png" alt="" />
+        <p class="text-box-moderacao">
+          {{item.avaliacao}}
+        </p>
+        <input type="image" src="assets/deletar_icone.png"  class="lixeira"/>
+      </div>
     </div>
-    <p class="text-box-moderacao">
-      Lorem ipsum dolor sit amet. Rem quia perspiciatis non porro ipsa qui fugit
-      eveniet et vitae impedit aut quis eveniet. Quo neque sapiente aut dolor
-      laudantium aut iusto architecto ut quia rerum est officia nulla. Ut sunt
-      voluptatem sit nostrum culpa non quia distinctio aut vitae voluptatibus
-      qui nostrum repudiandae qui dolore modi eum perferendis obcaecati.
-    </p>
-    <button class="botao-cancelar" type="reset">CANCELAR</button>
-    <button class="botao-confirmar" type="submit">CONFIRMAR</button>
   </form>
 
   <h1 class="heading-denuncias">DENÚNCIAS</h1>
 
   <form class="box-moderacao">
     <h2 class="heading-box-moderacao">COMENTÁRIOS</h2>
-    <div class="row">
-      <h3 class="nome-usuario column">nome - usuario</h3>
-      <img
-        class="img-box-moderacao column"
-        src="assets/estrelas_avaliacao.png"
-        alt=""
-      />
-      <img class="lixeira column" src="assets/deletar_icone.png" alt="" />
+    <div *ngFor="let item of listaDenunciadas" class="row">
+      <div class="row">
+        <img *ngIf="item.nota === 1" class="img-box-moderacao column" src="assets/estrelas_avaliacao_1.png" alt="" />
+        <img *ngIf="item.nota === 2" class="img-box-moderacao column" src="assets/estrelas_avaliacao_2.png" alt="" />
+        <img *ngIf="item.nota === 3" class="img-box-moderacao column" src="assets/estrelas_avaliacao_3.png" alt="" />
+        <img *ngIf="item.nota === 4" class="img-box-moderacao column" src="assets/estrelas_avaliacao_4.png" alt="" />
+        <img *ngIf="item.nota === 5" class="img-box-moderacao column" src="assets/estrelas_avaliacao_5.png" alt="" />
+        <p class="text-box-moderacao">
+          {{item.avaliacao}}
+        </p>
+        <input type="image" src="assets/deletar_icone.png"  class="lixeira"/>
+      </div>
     </div>
-    <p class="text-box-moderacao">
-      Lorem ipsum dolor sit amet. Rem quia perspiciatis non porro ipsa qui fugit
-      eveniet et vitae impedit aut quis eveniet. Quo neque sapiente aut dolor
-      laudantium aut iusto architecto ut quia rerum est officia nulla. Ut sunt
-      voluptatem sit nostrum culpa non quia distinctio aut vitae voluptatibus
-      qui nostrum repudiandae qui dolore modi eum perferendis obcaecati.
-    </p>
-    <button class="botao-cancelar" type="reset">CANCELAR</button>
-    <button class="botao-confirmar" type="submit">CONFIRMAR</button>
+    
   </form>
 
   <app-footer></app-footer>

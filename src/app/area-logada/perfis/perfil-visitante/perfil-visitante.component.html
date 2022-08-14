@@ -44,24 +44,28 @@
   </div>
 
   <div class="dropdown">
-    <button class="dropbtn">MUSEUS</button>
+    <button class="dropbtn">MUSEUS 🡫</button>
     <div class="dropdown-content">
-      <a href="#">MUSEU DA LÍNGUA PORTUGUESA</a>
-      <a href="#">PINACOTECA</a>
-      <a href="#">MUSEU AFRO BRASIL</a>
-      <a href="#">MUSEU DA CASA BRASILEIRA</a>
-      <a href="#">MUSEU DA IMIGRAÇÃO</a>
-      <a href="#">MUSEU DA DIVERSIDADE SEXUAL</a>
-      <a href="#">MEMORIAL DA RESISTÊNCIA</a>
-      <a href="#">MUSEU CATAVENTO</a>
-      <a href="#">MUSEU DO FUTEBOL</a>
-
+      <a *ngFor="let i of listaMuseus" (click)="buscarInformacoesMuseuSelecionado(i)">{{ i.nome }}</a>
     </div>
   </div>
 
 
-    <div class="coments">
+  <form class="box-moderacao">
+    <h2 class="heading-box-moderacao">COMENTÁRIOS</h2>
+    <div *ngFor="let item of listaAvaliacoes" class="row">
+      <div class="row">
+        <img *ngIf="item.nota === 1" class="img-box-moderacao column" src="assets/estrelas_avaliacao_1.png" alt="" />
+        <img *ngIf="item.nota === 2" class="img-box-moderacao column" src="assets/estrelas_avaliacao_2.png" alt="" />
+        <img *ngIf="item.nota === 3" class="img-box-moderacao column" src="assets/estrelas_avaliacao_3.png" alt="" />
+        <img *ngIf="item.nota === 4" class="img-box-moderacao column" src="assets/estrelas_avaliacao_4.png" alt="" />
+        <img *ngIf="item.nota === 5" class="img-box-moderacao column" src="assets/estrelas_avaliacao_5.png" alt="" />
+        <p class="text-box-moderacao">
+          {{item.avaliacao}}
+        </p>
+      </div>
     </div>
+  </form>
  
 
 

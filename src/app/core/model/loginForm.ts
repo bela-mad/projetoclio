@@ -10,7 +10,7 @@
  * Do not edit the class manually.
  */
 
-export class LoginForm { 
+export class LoginForm {
     email: string = '';
     senha: string = '';
 }
