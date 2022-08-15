@@ -15,10 +15,10 @@ export class MuseusApiService {
   getAllMuseus(): Observable<any> {
     return this.http
       .get<any>(this.baseUrl)
-      .pipe(map((data: any) => data.data.results));
+      .pipe(map((data: any) => data._embedded.museusDtoList));
   }
 
   getAllMuseusPorNome(name: any): Observable<any> {
-    return this.http.get<any>(`${this.baseUrl}/?name=${name}`);
+    return this.http.get<any>(`${this.baseUrl}/buscarPorNome/${name}`);
   }
 }

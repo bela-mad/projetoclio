@@ -12,10 +12,10 @@
 import { Link } from './link';
 import { UserDto } from './userDto';
 
-export interface VisitanteDto { 
+export class VisitanteDto { 
     id?: number;
-    nome: string;
-    sobrenome: string;
-    user?: UserDto;
-    links?: Array<Link>;
+    nome?: string;
+    sobrenome?: string;
+    user: UserDto = new UserDto;
+
 }

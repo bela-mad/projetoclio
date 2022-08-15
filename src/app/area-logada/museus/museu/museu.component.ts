@@ -11,11 +11,8 @@ export class MuseuComponent implements OnInit {
 
   constructor(private router: Router) {}
 
-  openDetalhes(pagename: string, museu: any): void {
-    this.router.navigate([`${pagename}`], {
-      state: museu,
-      replaceUrl: true,
-    });
+  openDetalhes(pagename: string, idMuseu: any): void {
+    this.router.navigate([`${pagename}`,idMuseu]);
   }
 
   ngOnInit(): void {}

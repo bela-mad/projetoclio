@@ -9,9 +9,9 @@
  * https://github.com/swagger-api/swagger-codegen.git
  * Do not edit the class manually.
  */
-import { Link } from './link';
 
-export interface CriaAvaliacaoMuseuDto { 
-    id: number;
-    links?: Array<Link>;
+
+export class CriaAvaliacaoMuseuDto { 
+    id?: number;
+  
 }

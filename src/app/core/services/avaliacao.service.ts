@@ -42,4 +42,12 @@ export class AvaliacaoService {
     return this.http.get(urlCompleta, {headers: reqHeader});
   }
 
+  createAvaliacao(data: any, token: any): Observable<any> {
+    var reqHeader = new HttpHeaders({ 
+        'Content-Type': 'application/json',
+        'Authorization': 'Bearer ' + token
+     });
+    return this.http.post(baseUrl, data, {headers: reqHeader});
+  }
+
 }

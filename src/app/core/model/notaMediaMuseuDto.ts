@@ -11,7 +11,7 @@
  */
 import { Link } from './link';
 
-export interface NotaMediaMuseuDto { 
+export class NotaMediaMuseuDto { 
     notaMedia?: number;
-    links?: Array<Link>;
+   
 }

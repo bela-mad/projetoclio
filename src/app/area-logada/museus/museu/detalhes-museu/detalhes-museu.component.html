@@ -2,15 +2,20 @@
   <app-nav-bar></app-nav-bar>
 
   <div class="img-museu">
-    <img src="" alt="" />
+    <img src = "{{museu.urlFoto}}" alt="" />
   </div>
 
-  <h1 class="nome-museu">[(ngModel)]="museu.nome"</h1>
+  <h1 class="nome-museu">{{ museu.nome }}</h1>
 
-  <div class="estrela-nota">[(ngModel)]="museu.nota"</div>
+  <!-- <div class="estrela-nota">{{notaMuseu.notaMedia }}</div> -->
+  <img *ngIf="notaMuseu.notaMedia === 1" class="estrela-nota" src="assets/estrelas_avaliacao_1.png" alt="" />
+  <img *ngIf="notaMuseu.notaMedia === 2" class="estrela-nota" src="assets/estrelas_avaliacao_2.png" alt="" />
+  <img *ngIf="notaMuseu.notaMedia === 3" class="estrela-nota" src="assets/estrelas_avaliacao_3.png" alt="" />
+  <img *ngIf="notaMuseu.notaMedia === 4" class="estrela-nota" src="assets/estrelas_avaliacao_4.png" alt="" />
+  <img *ngIf="notaMuseu.notaMedia === 5" class="estrela-nota" src="assets/estrelas_avaliacao_5.png" alt="" />
 
   <div class="descricao">
-    <p>[(ngModel)]="museu.descricaoMuseu"</p>
+    <p>{{ museu.descricaoMuseu }}</p>
   </div>
 
   <div class="linha"></div>
@@ -18,7 +23,7 @@
   <h3>HORÁRIOS DE FUNCIONAMENTO</h3>
 
   <div class="funcionamento">
-    <p>[(ngModel)]="museu.funcionamentoMuseu"</p>
+    <p>{{ museu.funcionamentoMuseu }}</p>
   </div>
 
   <div class="linha"></div>
@@ -27,12 +32,12 @@
 
   <div class="endereco">
     <p>
-      [(ngModel)]="endereco.rua", [(ngModel)]="endereco.numero" -
-      [(ngModel)]="endereco.bairro", [(ngModel)]="endereco.estado",
-      [(ngModel)]="endereco.pais"
+      {{ museu.endereco.rua }}, {{ museu.endereco.numero }} -
+      {{ museu.endereco.bairro }}, {{ museu.endereco.estado }},
+      {{ museu.endereco.pais }}
     </p>
     <br />
-    <p>[(ngModel)]="endereco.cep"</p>
+    <p>{{ museu.endereco.cep }}</p>
   </div>
 
   <div class="linha"></div>
@@ -41,32 +46,59 @@
 
   <div class="mais-informacoes">
     <img class="img1" src="assets/site_icone_branco.png" alt="" />
-    <p class="p1">[(ngModel)]="museu.urlSite"</p>
+    <p class="p1">{{museu.urlSite}}</p>
     <img class="img2" src="assets/instagram_branco.png" alt="" />
-    <p class="p2">[(ngModel)]="museu.urlInstagram"</p>
+    <p class="p2">{{museu.urlInstagram}}</p>
   </div>
 
   <div class="linha"></div>
 
-  <!-- <div class="estrela-avaliacao">{{ avaliacao }}</div>
+  <!-- <div class="estrela-avaliacao">{{ avaliacao }}</div>-->
+  <input
+  class="avaliacao"
+  type="number"
+  placeholder="Digite sua nota"
+  [(ngModel)]= "avaliacao.nota"
+  style="
+    font-family: Poppins;
+    font-size: 15px;
+    padding-left: 10px;
+    padding-top: -100px;
+  "
+/> 
 
   <input
     class="avaliacao"
     type="text"
-    placeholder="{{ avaliacao }}"
+    placeholder=""
+    [(ngModel)]= "avaliacao.avaliacao"
     style="
       font-family: Poppins;
       font-size: 15px;
       padding-left: 10px;
       padding-top: -100px;
     "
-  /> -->
+  /> 
 
-  <button>AVALIAR</button>
+  <button (click) = createAvaliacao()>AVALIAR</button>
 
-  <div class="comentarios">
+  <form class="comentarios">
     <h3 class="title">COMENTÁRIOS</h3>
-  </div>
+    <div *ngFor="let item of listaAvaliacoes" class="row">
+      <div class="row">
+        <img *ngIf="item.nota === 1" class="img-box-moderacao column" src="assets/estrelas_avaliacao_1.png" alt="" />
+        <img *ngIf="item.nota === 2" class="img-box-moderacao column" src="assets/estrelas_avaliacao_2.png" alt="" />
+        <img *ngIf="item.nota === 3" class="img-box-moderacao column" src="assets/estrelas_avaliacao_3.png" alt="" />
+        <img *ngIf="item.nota === 4" class="img-box-moderacao column" src="assets/estrelas_avaliacao_4.png" alt="" />
+        <img *ngIf="item.nota === 5" class="img-box-moderacao column" src="assets/estrelas_avaliacao_5.png" alt="" />
+        <p class="text-box-moderacao">
+          {{item.avaliacao}}
+        </p>
+      </div>
+    </div>
+  </form>
+
+
 
   <app-footer></app-footer>
 </div>

@@ -25,12 +25,12 @@
         <label for="floating2">Sobrenome</label>
       </div>
       <div class="form-floating">
-        <input type="email" class="form-control" [(ngModel)]="cadastro.email" required="required" id="floating3" name="email"
+        <input type="email" class="form-control" [(ngModel)]="cadastro.user.email" required="required" id="floating3" name="email"
           placeholder="Email" style="font-family: Poppins; font-size: 15px;padding-left: 10px;">
         <label for="floating3">Email</label>
       </div>
       <div class="form-floating">
-        <input type="password" class="form-control" [(ngModel)]="cadastro.senha" required="required" id="floating4"
+        <input type="password" class="form-control" [(ngModel)]="cadastro.user.senha" required="required" id="floating4"
           name="senha" placeholder="Senha" style="font-family: Poppins; font-size: 15px;padding-left: 10px;">
         <label for="floating4">Senha</label>
       </div>
@@ -38,7 +38,7 @@
 
       <div class="button">
 
-        <button type="submit">CADASTRAR</button>
+        <button type="submit" (click)="cadastrarVisitante()">CADASTRAR</button>
 
       </div>
 

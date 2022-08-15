@@ -1,9 +1,7 @@
-import { UserDto } from './../../core/model/userDto';
+
 import { VisitanteDto } from './../../core/model/visitanteDto';
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder } from '@angular/forms';
-import { Router } from '@angular/router';
-import { TokenStorageService } from 'src/app/core/services/token.storage.service';
 import { CadastroService } from 'src/app/core/services/cadastro.service';
 
 
@@ -13,41 +11,33 @@ import { CadastroService } from 'src/app/core/services/cadastro.service';
   styleUrls: ['./cadastro.component.css'],
 })
 export class CadastroComponent implements OnInit {
+  cadastro: VisitanteDto 
   
-  cadastro: VisitanteDto & UserDto = {
-    id: 0,
-    nome:'',
-    sobrenome:'',
-    email: '',
-    senha: '',
-  };
-
-  /*user: UserDto{
-    id: 0,
-    email: '',
-    senha: '',
-  }*/
-
-  constructor(private service: CadastroService, private router: Router, private tokenStorage: TokenStorageService) { 
+  
+  constructor(
+    private cadastroService: CadastroService, 
+  ) 
+  { 
+    this.cadastro = new VisitanteDto
   }
 
-  ngOnInit(): void {
-    this.tokenStorage.signOut()
+  ngOnInit() {
+  
+  }
+  cadastrarVisitante() {
+    const data = {
+      ...this.cadastro,
+   }
+
+    console.log(data)
+    this.cadastroService.create(data)
+      .subscribe({
+        next: (res) => {
+          alert('Usuário Cadastrado com Sucesso')
+        },
+        error: (e) => console.error(e)
+      })
   }
 
-/*
-  onSubmit() {
-    this.service.cadastrar (this.cadastro.nome, this.cadastro.sobrenome, this.cadastro.email, this.cadastro.senha).then(
-      (value: boolean) => {
-        if(value === true){
-          this.router.navigate(['inicio'])
-        }else{
-          alert('Preencha todos os campos!')
-        }
-      }
-    ).catch(
-      (error: any) => {
-        console.error(error)
-        alert('Escolha outro email!')
-      }*/
-    }
+
+}
