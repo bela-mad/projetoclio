@@ -22,7 +22,7 @@ const routes: Routes = [
   { path: '', component: LoginComponent },
   { path: 'termos-condicoes', component: TermosCondicoesComponent },
   { path: 'cadastro', component: CadastroComponent },
-  { path: 'alterar-senha/:id', component: AlterarSenhaComponent },
+  { path: 'alterar-senha', component: AlterarSenhaComponent },
   { path: 'perfil-admin', component: PerfilAdminComponent },
   { path: 'perfil-visitante', component: PerfilVisitanteComponent },
   { path: 'inicio', component: InicioComponent },

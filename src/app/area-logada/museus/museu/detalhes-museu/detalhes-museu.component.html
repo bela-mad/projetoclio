@@ -7,12 +7,7 @@
 
   <h1 class="nome-museu">{{ museu.nome }}</h1>
 
-  <!-- <div class="estrela-nota">{{notaMuseu.notaMedia }}</div> -->
-  <img *ngIf="notaMuseu.notaMedia === 1" class="estrela-nota" src="assets/estrelas_avaliacao_1.png" alt="" />
-  <img *ngIf="notaMuseu.notaMedia === 2" class="estrela-nota" src="assets/estrelas_avaliacao_2.png" alt="" />
-  <img *ngIf="notaMuseu.notaMedia === 3" class="estrela-nota" src="assets/estrelas_avaliacao_3.png" alt="" />
-  <img *ngIf="notaMuseu.notaMedia === 4" class="estrela-nota" src="assets/estrelas_avaliacao_4.png" alt="" />
-  <img *ngIf="notaMuseu.notaMedia === 5" class="estrela-nota" src="assets/estrelas_avaliacao_5.png" alt="" />
+  <img class="estrela-nota" src="{{imagemNota}}" alt="" />
 
   <div class="descricao">
     <p>{{ museu.descricaoMuseu }}</p>
@@ -91,6 +86,7 @@
         <img *ngIf="item.nota === 3" class="img-box-moderacao column" src="assets/estrelas_avaliacao_3.png" alt="" />
         <img *ngIf="item.nota === 4" class="img-box-moderacao column" src="assets/estrelas_avaliacao_4.png" alt="" />
         <img *ngIf="item.nota === 5" class="img-box-moderacao column" src="assets/estrelas_avaliacao_5.png" alt="" />
+        
         <p class="text-box-moderacao">
           {{item.avaliacao}}
         </p>
