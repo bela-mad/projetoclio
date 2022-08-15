@@ -18,7 +18,7 @@
 
   <div class="container">
     <div class="row justify-content-md-center">
-      <div class="col-3" *ngFor="let museu of allMuseus | async">
+      <div class="col-3" *ngFor="let museu of allMuseus">
           <museu class="card" [museu]="museu"></museu>
       </div>
     </div>

@@ -22,7 +22,7 @@ const routes: Routes = [
   { path: '', component: LoginComponent },
   { path: 'termos-condicoes', component: TermosCondicoesComponent },
   { path: 'cadastro', component: CadastroComponent },
-  { path: 'alterar-senha', component: AlterarSenhaComponent },
+  { path: 'alterar-senha/:id', component: AlterarSenhaComponent },
   { path: 'perfil-admin', component: PerfilAdminComponent },
   { path: 'perfil-visitante', component: PerfilVisitanteComponent },
   { path: 'inicio', component: InicioComponent },
@@ -33,7 +33,7 @@ const routes: Routes = [
   { path: 'cadastro-museus', component: CadastroMuseusComponent },
   { path: 'moderacao-avaliacoes', component: ModeracaoAvaliacoesComponent },
   { path: 'museus', component: MuseusComponent },
-  { path: 'detalhes-museu', component: DetalhesMuseuComponent },
+  { path: 'detalhes-museu/:id', component: DetalhesMuseuComponent },
   { path: 'ranking', component: RankingComponent },
   { path: 'em-construcao', component: EmConstrucaoComponent },
 

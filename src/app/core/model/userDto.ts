@@ -11,9 +11,9 @@
  */
 import { Link } from './link';
 
-export interface UserDto { 
+export class UserDto { 
     id?: number;
-    email: string;
-    senha: string;
-    links?: Array<Link>;
+    email: string = '';
+    senha: string ='';
+   
 }

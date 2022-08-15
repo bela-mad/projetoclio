@@ -44,4 +44,15 @@ export class MuseuService {
     });
     return this.http.put(baseUrl + "/" + id, data, {headers: reqHeader});
   }
+
+  getNotaMedia(id:any,token:any):Observable<any>{
+    var reqHeader = new HttpHeaders({ 
+      'Content-Type': 'application/json',
+      'Authorization': 'Bearer ' + token
+    });
+    return this.http.get(baseUrl + "/notaMedia/" +  id,  {headers: reqHeader});
+  }
+  
+
+  
 }

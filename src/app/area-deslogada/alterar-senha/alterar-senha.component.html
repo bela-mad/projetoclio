@@ -21,21 +21,21 @@
       <h1 class="title">ALTERAR SENHA:</h1>
 
         <div class="form-floating">
-          <input type="password" class="form-control"required="required" id="floatingPassword" placeholder="Última Senha" style="font-family: Poppins; font-size: 15px;padding-left: 10px;">
+          <input type="password" class="form-control" [(ngModel)]="alterarSenha.senhaAntiga"required="required" id="floatingPassword" placeholder="Última Senha" style="font-family: Poppins; font-size: 15px;padding-left: 10px;">
           <label for="floatingPassword">Última Senha</label>
         </div>
         <div class="form-floating">
-          <input type="password" class="form-control" required="required" id="floatingPassword" placeholder="Nova Senha" style="font-family: Poppins; font-size: 15px;padding-left: 10px;">
+          <input type="password" class="form-control" [(ngModel)]="alterarSenha.senhaNova" required="required" id="floatingPassword" placeholder="Nova Senha" style="font-family: Poppins; font-size: 15px;padding-left: 10px;">
           <label for="floatingPassword">Nova Senha</label>
         </div>
         <div class="form-floating">
-          <input type="password" class="form-control" required="required" id="floatingPassword" placeholder="Confirmar Senha" style="font-family: Poppins; font-size: 15px;padding-left: 10px;">
+          <input type="password" class="form-control" [(ngModel)]="alterarSenha.confirmaSenhaNova" required="required" id="floatingPassword" placeholder="Confirmar Senha" style="font-family: Poppins; font-size: 15px;padding-left: 10px;">
           <label for="floatingPassword">Confirmar Senha</label>
         </div>
 
       <div class="button">
 
-        <button type="submit" value="alterar">ALTERAR</button>
+        <button type="submit" value="alterar" (click)="alterarSenhaVisitante()">ALTERAR</button>
 
       </div>
 

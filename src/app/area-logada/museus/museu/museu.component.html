@@ -1,10 +1,10 @@
 <img
   mat-card-image
-  src="{{ museu.thumbnail.path }}.{{ museu.thumbnail.extension }}"
-  alt="{{ museu.name }}"
-  (click)="openDetalhes('museu', museu)"
+  src="{{museu.urlFoto}}"
+  alt="{{ museu.nome }}"
+  (click)="openDetalhes('detalhes-museu', museu.id)"
 />
 
-<div (click)="openDetalhes('museu', museu)">
-  <div class="name">{{ museu.name }}</div>
+<div (click)="openDetalhes('detalhes-museu', museu.id)">
+  <div class="name">{{ museu.nome }}</div>
 </div>

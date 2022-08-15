@@ -11,9 +11,9 @@
  */
 import { Link } from './link';
 
-export interface AlteraSenhaVisitanteDto { 
-    senhaAntiga: string;
-    senhaNova: string;
-    confirmaSenhaNova: string;
-    links?: Array<Link>;
+export class AlteraSenhaVisitanteDto { 
+    senhaAntiga: string = '';
+    senhaNova: string = '';
+    confirmaSenhaNova: string = '';
+   
 }

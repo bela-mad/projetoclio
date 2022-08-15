@@ -10,15 +10,12 @@
  * Do not edit the class manually.
  */
 import { CriaAvaliacaoMuseuDto } from './criaAvaliacaoMuseuDto';
-import { CriaAvaliacaoUserDto } from './criaAvaliacaoUserDto';
-import { Link } from './link';
 
-export interface CriaAvaliacaoDto { 
+
+export class CriaAvaliacaoDto { 
     id?: number;
-    nota: number;
-    avaliacao: string;
-    museu: CriaAvaliacaoMuseuDto;
-    autor?: CriaAvaliacaoUserDto;
-    denunciada?: boolean;
-    links?: Array<Link>;
+    nota?: number;
+    avaliacao?: string;
+    museu?: CriaAvaliacaoMuseuDto;
+
 }
