@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { Router } from '@angular/router';
 import { AvaliacaoDto } from 'src/app/core/model/avaliacaoDto';
 import { CollectionModelAvaliacaoDto } from 'src/app/core/model/collectionModelAvaliacaoDto';
 import { MuseusDto } from 'src/app/core/model/museusDto';
@@ -21,7 +20,6 @@ export class PerfilVisitanteComponent implements OnInit {
     private museuService: MuseuService,
     private tokenStorage: TokenStorageService,
     private avaliacaoService: AvaliacaoService,
-    private router: Router
   ) 
   {
     this.museuSelecionado = new MuseusDto
@@ -35,15 +33,10 @@ export class PerfilVisitanteComponent implements OnInit {
     this.museuService.findAll(this.tokenStorage.getToken())
     .subscribe({
       next: (data) => {
-        console.log(data._embedded.museusDtoList)
         this.listaMuseus = data._embedded.museusDtoList
       },
       error: (e) => console.error(e)
     });
-  }
-
-  alterarSenha(){
-    this.router.navigate(['alterar-senha',this.tokenStorage.getUserId()]);
   }
 
   buscarInformacoesMuseuSelecionado(museuSel: MuseusDto){

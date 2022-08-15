@@ -44,8 +44,7 @@ export class AlterarMuseusComponent implements OnInit {
    this.museuService.atualizarMuseus(this.id,data, this.tokenStorage.getToken())
    .subscribe({
      next: (res) => {
-       console.log(res);
-       alert('Museu Alterado com Sucesso')
+       alert('Senha Alterada com Sucesso')
       },
      error: (e) => console.error(e)
    })

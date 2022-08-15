@@ -1,8 +1,9 @@
+import { LoginService } from 'src/app/core/services/login.service';
 
 import { VisitanteDto } from './../../core/model/visitanteDto';
 import { Component, OnInit } from '@angular/core';
-import { FormBuilder } from '@angular/forms';
-import { CadastroService } from 'src/app/core/services/cadastro.service';
+import { VisitanteService } from 'src/app/core/services/visitante.service';
+import { Router } from '@angular/router';
 
 
 @Component({
@@ -15,7 +16,9 @@ export class CadastroComponent implements OnInit {
   
   
   constructor(
-    private cadastroService: CadastroService, 
+    private cadastroService: VisitanteService,
+    private loginService: LoginService,
+    private router: Router
   ) 
   { 
     this.cadastro = new VisitanteDto
@@ -29,11 +32,21 @@ export class CadastroComponent implements OnInit {
       ...this.cadastro,
    }
 
-    console.log(data)
     this.cadastroService.create(data)
       .subscribe({
         next: (res) => {
           alert('Usuário Cadastrado com Sucesso')
+          this.loginService.logar(this.cadastro.user.email, this.cadastro.user.senha).then(
+            (value: boolean) => {
+              if(value === true){
+                this.router.navigate(['inicio'])
+              }
+            }
+          ).catch(
+            (error: any) => {
+              console.error(error)
+            }
+          )
         },
         error: (e) => console.error(e)
       })

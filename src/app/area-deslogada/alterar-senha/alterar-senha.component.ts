@@ -1,9 +1,8 @@
-import { CadastroService } from 'src/app/core/services/cadastro.service';
+import { VisitanteService } from 'src/app/core/services/visitante.service';
 import { AlteraSenhaVisitanteDto } from './../../core/model/alteraSenhaVisitanteDto';
 import { Component, OnInit } from '@angular/core';
-import { MuseuService } from 'src/app/core/services/museu.service';
 import { TokenStorageService } from 'src/app/core/services/token.storage.service';
-import { ActivatedRoute, ParamMap } from '@angular/router';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-alterar-senha',
@@ -16,18 +15,16 @@ export class AlterarSenhaComponent implements OnInit {
 
   constructor
   (
-    private cadastroService: CadastroService,
-    private route: ActivatedRoute,
-    private tokenStorage: TokenStorageService
+    private cadastroService: VisitanteService,
+    private tokenStorage: TokenStorageService,
+    private router: Router
   ) 
   {
     this.alterarSenha = new AlteraSenhaVisitanteDto
   }
 
   ngOnInit() {
-    this.route.paramMap.subscribe((params: ParamMap) => {
-      this.id = params.get('id')
-    })
+    this.id = this.tokenStorage.getVisitanteId()
   }
   alterarSenhaVisitante() {
     const data = {
@@ -38,8 +35,8 @@ export class AlterarSenhaComponent implements OnInit {
     this.cadastroService.alterarSenha(this.id, data, this.tokenStorage.getToken())
       .subscribe({
         next: (res) => {
-          console.log(res);
-          alert('Museu Cadastrado com Sucesso')
+          alert('Senha alterada com Sucesso')
+          this.router.navigate([''])
         },
         error: (e) => console.error(e)
       })

@@ -34,7 +34,6 @@ export class ModeracaoAvaliacoesComponent implements OnInit {
     this.museuService.findAll(this.tokenStorage.getToken())
     .subscribe({
       next: (data) => {
-        console.log(data._embedded.museusDtoList)
         this.listaMuseus = data._embedded.museusDtoList
       },
       error: (e) => console.error(e)
@@ -65,7 +64,6 @@ export class ModeracaoAvaliacoesComponent implements OnInit {
     .subscribe({
       next: (data) => {
         if(data._embedded){
-          console.log(data._embedded.museusDtoList)
           this.listaAvaliacoes = data._embedded.avaliacaoDtoList;
         }else{
           this.listaAvaliacoes = []
