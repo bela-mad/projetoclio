@@ -143,6 +143,8 @@ button {
 }
 
 .d-block {
-  margin-left: 21rem;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
   padding-bottom: 4rem;
 }
