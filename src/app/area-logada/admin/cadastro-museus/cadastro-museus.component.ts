@@ -36,7 +36,6 @@ export class CadastroMuseusComponent implements OnInit {
     this.museuService.create(data, this.tokenStorage.getToken())
       .subscribe({
         next: (res) => {
-          console.log(res);
           alert('Museu Cadastrado com Sucesso')
          this.limparCampos();
         },

@@ -34,7 +34,6 @@ export class AvaliacaoService {
 
   getAvaliacoesUsuario(idVisitante:any, token:any):Observable<CollectionModelAvaliacaoDto>{
     var urlCompleta = baseUrl + "/doVisitante/" + idVisitante
-    console.log(urlCompleta)
     var reqHeader = new HttpHeaders({ 
       'Content-Type': 'application/json',
       'Authorization': 'Bearer ' + token
