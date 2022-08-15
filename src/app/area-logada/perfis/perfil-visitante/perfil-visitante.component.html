@@ -1,8 +1,6 @@
 <app-nav-bar></app-nav-bar>
 
 <div class="perfil-visitante">
-
-
   <!--TÍTULO-->
 
   <div>
@@ -12,17 +10,15 @@
   <!--PASSAPORTE ADMINISTRADOR-->
 
   <div class="content">
-
     <div class="passaporte">
-      <img src="assets/passaporte_user.png" alt="passaporte_administrador">
+      <img src="assets/passaporte_user.png" alt="passaporte_administrador" />
     </div>
 
     <div class="avatar">
-      <img src="assets/avatar_user.png" alt="">
+      <img src="assets/avatar_user.png" alt="" />
     </div>
 
     <div class="list">
-
       <div class="a">
         <a routerLink="/alterar-senha/">ALTERAR SENHA</a>
       </div>
@@ -32,9 +28,7 @@
       <div class="a">
         <a routerLink="/museus">MUSEUS</a>
       </div>
-
     </div>
-
   </div>
 
   <!--COMENTÁRIOS DO VISITANTE-->
@@ -46,41 +40,64 @@
   <div class="dropdown">
     <button class="dropbtn">MUSEUS 🡫</button>
     <div class="dropdown-content">
-      <a *ngFor="let i of listaMuseus" (click)="buscarInformacoesMuseuSelecionado(i)">{{ i.nome }}</a>
+      <a
+        *ngFor="let i of listaMuseus"
+        (click)="buscarInformacoesMuseuSelecionado(i)"
+        >{{ i.nome }}</a
+      >
     </div>
   </div>
-
 
   <form class="box-moderacao">
     <h2 class="heading-box-moderacao">COMENTÁRIOS</h2>
     <div *ngFor="let item of listaAvaliacoes" class="row">
       <div class="row">
-        <img *ngIf="item.nota === 1" class="img-box-moderacao column" src="assets/estrelas_avaliacao_1.png" alt="" />
-        <img *ngIf="item.nota === 2" class="img-box-moderacao column" src="assets/estrelas_avaliacao_2.png" alt="" />
-        <img *ngIf="item.nota === 3" class="img-box-moderacao column" src="assets/estrelas_avaliacao_3.png" alt="" />
-        <img *ngIf="item.nota === 4" class="img-box-moderacao column" src="assets/estrelas_avaliacao_4.png" alt="" />
-        <img *ngIf="item.nota === 5" class="img-box-moderacao column" src="assets/estrelas_avaliacao_5.png" alt="" />
+        <img
+          *ngIf="item.nota === 1"
+          class="img-box-moderacao column"
+          src="assets/estrelas_avaliacao_1.png"
+          alt=""
+        />
+        <img
+          *ngIf="item.nota === 2"
+          class="img-box-moderacao column"
+          src="assets/estrelas_avaliacao_2.png"
+          alt=""
+        />
+        <img
+          *ngIf="item.nota === 3"
+          class="img-box-moderacao column"
+          src="assets/estrelas_avaliacao_3.png"
+          alt=""
+        />
+        <img
+          *ngIf="item.nota === 4"
+          class="img-box-moderacao column"
+          src="assets/estrelas_avaliacao_4.png"
+          alt=""
+        />
+        <img
+          *ngIf="item.nota === 5"
+          class="img-box-moderacao column"
+          src="assets/estrelas_avaliacao_5.png"
+          alt=""
+        />
         <p class="text-box-moderacao">
-          {{item.avaliacao}}
+          {{ item.avaliacao }}
         </p>
       </div>
     </div>
   </form>
- 
 
+  <!--FAIXA ROSA COM LINK-->
 
+  <div class="section">
+    <p>
+      Quer conhecer mais sobre o Passaporte Clio?<a routerLink="/sobre">
+        CLIQUE AQUI.</a
+      >
+    </p>
+  </div>
 
-    
-
-
-<!--FAIXA ROSA COM LINK-->
-
-<div class="section">
-  <p>Quer conhecer mais sobre o Passaporte Clio?<a routerLink="/sobre"> CLIQUE AQUI.</a></p>
+  <app-footer></app-footer>
 </div>
-
-<app-footer></app-footer>
-
-</div> 
-
-

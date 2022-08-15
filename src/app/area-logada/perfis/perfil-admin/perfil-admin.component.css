@@ -1,110 +1,93 @@
-
-/*PERFIL PASSAPORTE-ADMINISTRADOR*/
-
 .perfil-admin {
-    background-color: #83C5BE;
-    position: relative;
+  background-color: #83c5be;
+  position: relative;
 }
 
-h1 {
-    position: static;
-    font-family: "Poppins", sans-serif;
-    font-style: normal;
-    text-align: center;
-    font-weight: 800;
-    font-size: 42px;
-    line-height: 72px;
-    margin: 0;
-    padding-top: 8%;
-    padding-bottom: 100px;
-    color: #ffffff;
-    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+.title {
+  position: static;
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+  font-weight: 800;
+  font-size: 42px;
+  line-height: 72px;
+  margin: 0;
+  padding-top: 8%;
+  padding-bottom: 100px;
+  color: #ffffff;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .content {
-    position: relative;
-    
+  position: relative;
+  margin-bottom: 65px;
 }
 
 .passaporte img {
-
-    width: 1100px;
-    height: 1100px;
-    margin-top: -18%;
-    margin-left: 13.5%;
+  display: block;
+  width: 1100px;
+  height: 642px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .avatar img {
-    position: absolute;
-    width: 170px;
-    height: 170px;
-    left: 400px;
-    top: 40px;
+  position: absolute;
+  width: 170px;
+  height: 170px;
+  left: 340px;
+  top: 40px;
 }
 
 div a {
-    color: #343131;
+  color: #343131;
 }
 
 .list {
-    position: absolute;
-    left: 325px;
-    top: 240px;
-
-    font-family: 'Courier Prime';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 26px;
-    line-height: 36px;
-    display: flexbox;
-    align-items: center;
-    text-align: center;
-    letter-spacing: 0.05em;
+  position: absolute;
+  left: 325px;
+  top: 240px;
+  font-family: "Courier Prime";
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 36px;
+  display: flexbox;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.05em;
 }
 
 .list .a {
-    margin-bottom: 7px;
+  margin-bottom: 7px;
 }
 
 /*FAIXA ROSA COM LINK*/
 
 .section {
+  width: 1520px;
+  height: 100px;
+  left: 0px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
 
-    width: 1520px;
-    height: 100px;
-    left: 0px;
-    align-items: center;
-    display: flex;
-    justify-content: center;
-
-    background: #FFDDD2;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  background: #ffddd2;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
-
-
 .section p {
-
-    font-family: "Poppins", sans-serif;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 28px;
-    line-height: 48px;
-    letter-spacing: 0.05em;
-
-    color: #006D77;
-
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 48px;
+  letter-spacing: 0.05em;
+  color: #006d77;
 }
 
 .section a {
-
-    font-family: "Poppins", sans-serif;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 28px;
-    line-height: 48px;
-    letter-spacing: 0.05em;
-
-    color: #EF7649;
-
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 48px;
+  letter-spacing: 0.05em;
+  color: #ef7649;
 }

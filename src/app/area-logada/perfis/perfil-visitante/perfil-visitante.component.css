@@ -1,247 +1,229 @@
-
 .perfil-visitante {
-    background-color: #83C5BE;
-    position: relative;
+  background-color: #83c5be;
+  position: relative;
 }
 
 /*PERFIL PASSAPORTE-VISITANTE*/
 
 .title1 {
-    position: static;
-    font-family: "Poppins", sans-serif;
-    font-style: normal;
-    text-align: center;
-    font-weight: 800;
-    font-size: 42px;
-    line-height: 72px;
-    margin: 0;
-    padding-top: 8%;
-    padding-bottom: 100px;
-    color: #ffffff;
-    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  position: static;
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+  font-weight: 800;
+  font-size: 42px;
+  line-height: 72px;
+  margin: 0;
+  padding-top: 8%;
+  padding-bottom: 100px;
+  color: #ffffff;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .content {
-    position: relative;
-    margin-bottom: -100px;
+  position: relative;
+  margin-bottom: -100px;
 }
 
 .passaporte img {
-
-    width: 1100px;
-    height: 1100px;
-    margin-top: -18%;
-    margin-left: 13.5%;
+  display: block;
+  width: 1100px;
+  height: 642px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .avatar img {
-    position: absolute;
-    width: 170px;
-    height: 170px;
-    left: 400px;
-    top: 40px;
+  position: absolute;
+  width: 170px;
+  height: 170px;
+  left: 340px;
+  top: 40px;
 }
 
 div a {
-    color: #343131;
-    text-decoration: none;
+  color: #343131;
+  text-decoration: none;
 }
 
 .list {
-    position: absolute;
-    left: 375px;
-    top: 230px;
-
-    font-family: 'Courier Prime';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 26px;
-    line-height: 36px;
-    display: flexbox;
-    align-items: center;
-    text-align: center;
-    letter-spacing: 0.05em;
-
+  position: absolute;
+  left: 305px;
+  top: 230px;
+  font-family: "Courier Prime";
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 36px;
+  text-align: center;
+  letter-spacing: 0.05em;
 }
 
 .list .a {
-    margin-top: 15px;
+  margin-top: 15px;
 }
 
 /*COMENTÁRIOS PERFIL-VISITANTE*/
 
 .title2 {
-    position: static;
-    font-family: "Poppins", sans-serif;
-    font-style: normal;
-    text-align: center;
-    font-weight: 800;
-    font-size: 42px;
-    line-height: 72px;
-    padding-bottom: 25px;
-    color: #ffffff;
-    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  position: static;
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+  font-weight: 800;
+  font-size: 42px;
+  line-height: 72px;
+  padding-bottom: 25px;
+  color: #ffffff;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
+
+/* Dropdown */
 
 /* Style The Dropdown Button */
 .dropbtn {
-    background-color: #9AD0CB;
-    color: white;
-    padding: 20px;
-    font-family: "Poppins", sans-serif;
-    font-size: 16px;
-    font-weight: 700;
-    letter-spacing: 0.05em;
-    border: none;
-    cursor: pointer;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    border-radius: 30px;
+  background-color: #9ad0cb;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  border: none;
+  cursor: pointer;
+  padding: 20px;
+  color: white;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 30px;
 
-    margin-left: 200px;
+  margin-left: 200px;
 }
 
 /* The container <div> - needed to position the dropdown content */
 .dropdown {
-    display: inline-block;
+  display: inline-block;
 }
 
 /* Dropdown Content (Hidden by Default) */
 .dropdown-content {
-    display: none;
-    position: absolute;
-    border-radius: 15px;
-    background-color: #f9f9f9;
-    min-width: 220px;
-    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-    z-index: 1;
-    margin-top: 2px;
-    margin-left: 140px;
+  display: none;
+  position: absolute;
+  border-radius: 15px;
+  background-color: #f9f9f9;
+  min-width: 220px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  margin-top: 2px;
+  margin-left: 140px;
 }
 
 /* Links inside the dropdown */
 .dropdown-content a {
-    color: black;
-    font-family: "Poppins", sans-serif;
-    padding: 12px 16px;
-    font-size: 12px;
-    text-decoration: none;
-    display: block;
-    border-radius: 15px;
-
+  display: block;
+  font-family: "Poppins", sans-serif;
+  font-size: 12px;
+  text-decoration: none;
+  padding: 12px 16px;
+  color: black;
+  border-radius: 15px;
 }
 
 /* Change color of dropdown links on hover */
 .dropdown-content a:hover {
-    background-color: #f1f1f1
+  background-color: #f1f1f1;
 }
 
 /* Show the dropdown menu on hover */
 .dropdown:hover .dropdown-content {
-    display: block;
+  display: block;
 }
 
 /* Change the background color of the dropdown button when the dropdown content is shown */
 .dropdown:hover .dropbtn {
-    background-color: #EF7649;
+  background-color: #ef7649;
 }
 
+/* Área de comentários */
+
 .heading-box-moderacao {
-    font-weight: 800;
-    font-size: 22px;
-    text-align: start;
-    letter-spacing: 0.1em;
-    color: #ffffff;
-  }
+  font-weight: 800;
+  font-size: 22px;
+  text-align: start;
+  letter-spacing: 0.1em;
+  color: #ffffff;
+}
 
 .box-moderacao {
-    width: 1100px;
-    margin-top: 48px;
-    margin-left: 125px;
-    margin-bottom: 100px;
-    padding: 40px 50px 50px 50px;
-    background-color: #9ad0cb;
-    border-radius: 30px;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  width: 1100px;
+  background-color: #9ad0cb;
+  margin-top: 48px;
+  margin-left: 125px;
+  margin-bottom: 100px;
+  padding: 40px 50px 50px 50px;
+  border-radius: 30px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .row {
-    display: flex;
-    margin: 0;
+  display: flex;
+  margin: 0;
 }
 
 .img-box-moderacao {
-    width: 140px;
-    height: 30px;
-    margin-right: auto;
-    margin-bottom: 1rem;
+  width: 140px;
+  height: 30px;
+  margin-right: auto;
+  margin-bottom: 1rem;
 }
-  
+
 .lixeira {
-    width: 35px;
-    height: 35px;
-    margin-left: auto;
+  width: 35px;
+  height: 35px;
+  margin-left: auto;
 }
-  
+
 .text-box-moderacao {
-    font-weight: 600;
-    font-size: 16px;
-    line-height: 30px;
-    text-align: justify;
-    letter-spacing: 0.05em;
-    color: #ffffff;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 30px;
+  text-align: justify;
+  letter-spacing: 0.05em;
+  color: #ffffff;
 }
 
 .coments {
-    width: 1100px;
-    height: 550px;
-    margin-left: 13.5%;
-    margin-top: 40px;
-    background: rgba(237, 246, 249, 0.22);
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    border-radius: 12px;
+  width: 1100px;
+  height: 550px;
+  margin-left: 13.5%;
+  margin-top: 40px;
+  background: rgba(237, 246, 249, 0.22);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 12px;
 }
 
 /*FAIXA ROSA COM LINK*/
 
 .section {
-
-    width: 1520px;
-    height: 100px;
-    margin-top: 140px;
-    align-items: center;
-    display: flex;
-    justify-content: center;
-
-    background: #FFDDD2;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  display: flex;
+  width: 1520px;
+  height: 100px;
+  background: #ffddd2;
+  align-items: center;
+  justify-content: center;
+  margin-top: 140px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
-
-
 .section p {
-
-    font-family: "Poppins", sans-serif;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 28px;
-    line-height: 48px;
-    letter-spacing: 0.05em;
-
-    color: #006D77;
-
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 48px;
+  letter-spacing: 0.05em;
+  color: #006d77;
 }
 
 .section a {
-
-    font-family: "Poppins", sans-serif;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 28px;
-    line-height: 48px;
-    letter-spacing: 0.05em;
-
-    color: #EF7649;
-    ;
-
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 48px;
+  letter-spacing: 0.05em;
+  color: #ef7649;
 }
