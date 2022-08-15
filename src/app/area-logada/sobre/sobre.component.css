@@ -1,15 +1,13 @@
-
 .sobre {
-  background-color: #83C5BE;
+  background-color: #83c5be;
   position: relative;
   width: 100%;
   font-family: "Poppins", sans-serif;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
-.title h1 {
+.title {
   position: static;
-  font-style: normal;
   text-align: center;
   font-weight: 800;
   font-size: 42px;
@@ -21,93 +19,99 @@
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
+.row {
+  width: 100%;
+  margin: 0;
+}
+
 .paragrafo1 {
-  width: 550px;
-  height: 250px;
-  margin-left: 140px;
-  margin-bottom: -4%;
+  display: block;
+  width: 50%;
   text-align: justify;
-  font-style: normal;
   font-weight: 600;
   font-size: 18px;
   line-height: 30px;
   letter-spacing: 0.05em;
-
-  color: #FFFFFF;
+  margin: auto 0;
+  padding-left: 8rem;
+  color: #ffffff;
 }
 
 .card1 {
-  width: 500px;
-  margin-top: -240px;
-  margin-right: 200px;
-  float: right;
+  display: block;
+  height: 251px;
+  margin: 0 auto;
+}
+
+.text2 {
+  margin-top: 95px;
 }
 
 .paragrafo2 {
-  width: 550px;
-  height: 250px;
-  margin-right: 170px;
-  margin-top: 80px;
+  display: block;
+  width: 50%;
   text-align: justify;
-  font-style: normal;
   font-weight: 600;
   font-size: 18px;
   line-height: 30px;
   letter-spacing: 0.05em;
-  float: right;
-
-  color: #FFFFFF;
+  margin: auto 0;
+  padding-right: 8rem;
+  color: #ffffff;
 }
 
 .card2 {
-  width: 500px;
-  margin-top: 100px;
-  margin-left: 170px;
-  margin-bottom: 10px;
-  float: left;
+  display: block;
+  height: 251px;
+  margin: 0 auto;
+}
+
+.text3 {
+  margin-top: 95px;
+  margin-bottom: 120px;
 }
 
 .paragrafo3 {
-  width: 540px;
-  height: 250px;
-  margin-left: 140px;
-  margin-top: 480px;
+  display: block;
+  width: 50%;
   text-align: justify;
-  font-style: normal;
   font-weight: 600;
   font-size: 18px;
   line-height: 30px;
   letter-spacing: 0.05em;
-
-  color: #FFFFFF;
+  margin: auto 0;
+  padding-left: 7rem;
+  color: #ffffff;
 }
 
 .card3 {
-  width: 500px;
-  margin-top: -330px;
-  margin-right: 200px;
-  float: right;
+  display: block;
+  height: 320px;
+  margin: 0 auto;
 }
 
+/* Nossa Equipe */
+
 .equipe {
-  width: 1200px;
+  display: block;
+  width: 1180px;
   height: 300px;
-  margin-left: 140px;
-  margin-top: 5%;
-  margin-bottom: 5%;
-  font-style: normal;
+  background: rgba(237, 246, 249, 0.22);
   font-weight: 800;
   text-decoration: none;
-  color: #006D77;
-  background: rgba(237, 246, 249, 0.22);
+  margin: 5% auto;
+  color: #006d77;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 12px;
 }
 
+.elipse1 {
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .elipse1 img {
-  margin-top: 50px;
-  margin-left: 50px;
-  margin-bottom: 15px;
+  margin: 50px 0 15px 50px;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
@@ -119,24 +123,18 @@
 .elipse1 a {
   margin-left: 95px;
   margin-bottom: 15px;
-  color: #EF7649;
-
+  color: #ef7649;
 }
 
 .elipse2 img {
-  margin-top: -208px;
-  margin-right: 765px;
-  margin-bottom: 15px;
+  margin: -208px 765px 15px 0;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
   float: right;
-  
 }
 
 .elipse2 p {
-  margin-top: -42px;
-  margin-right: 780px;
-  margin-bottom: 2px;
   float: right;
+  margin: -42px 780px 2px 0;
 }
 
 .elipse2 a {
@@ -144,9 +142,8 @@
   margin-bottom: 15px;
   margin-top: -20px;
   float: right;
-  color: #EF7649;
+  color: #ef7649;
 }
-
 
 .elipse3 img {
   margin-top: -222px;
@@ -168,7 +165,7 @@
   margin-bottom: 15px;
   margin-top: -35px;
   float: right;
-  color: #EF7649;
+  color: #ef7649;
 }
 
 .elipse4 img {
@@ -191,7 +188,7 @@
   margin-bottom: 15px;
   margin-top: -35px;
   float: right;
-  color: #EF7649;
+  color: #ef7649;
 }
 
 .elipse5 img {
@@ -214,44 +211,34 @@
   margin-bottom: 15px;
   margin-top: -35px;
   float: right;
-  color: #EF7649;
+  color: #ef7649;
 }
 /*FAIXA ROSA COM LINK*/
 
 .section {
-
-  width: 1520px;
+  width: 100%;
   height: 100px;
   left: 0px;
   align-items: center;
   display: flex;
   justify-content: center;
-
-  background: #FFDDD2;
+  background: #ffddd2;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
-
-
 .section p {
-  font-style: normal;
   font-weight: 600;
   font-size: 28px;
   line-height: 48px;
   letter-spacing: 0.05em;
-
-  color: #006D77;
-
+  color: #006d77;
 }
 
 .section a {
-  font-style: normal;
   font-weight: 600;
   font-size: 28px;
   line-height: 48px;
   letter-spacing: 0.05em;
   text-decoration: none;
-  color: #EF7649;
-  ;
-
+  color: #ef7649;
 }
