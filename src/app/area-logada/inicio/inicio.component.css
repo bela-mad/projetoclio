@@ -1,15 +1,13 @@
-
 .inicio {
-  background-color: #83C5BE;
+  background-color: #83c5be;
   position: relative;
   width: 100%;
+  font-family: "Poppins";
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
-h1 {
+.title {
   position: static;
-  font-family: 'Poppins';
-  font-style: normal;
   text-align: center;
   font-weight: 800;
   font-size: 42px;
@@ -21,79 +19,70 @@ h1 {
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
-.paragrafo {
-  width: 500px;
-  height: 250px;
-  margin-left: 140px;
-  text-align: justify;
+.row {
+  width: 100%;
+}
 
-  font-family: 'Poppins';
-  font-style: normal;
+.paragrafo {
+  display: block;
+  width: 50%;
   font-weight: 600;
   font-size: 18px;
   line-height: 30px;
   text-align: justify;
   letter-spacing: 0.05em;
-
-  color: #FFFFFF;
+  margin: auto;
+  margin-left: 130px;
+  padding: 0 3rem 0 0;
+  color: #ffffff;
 }
 
 .card {
-  background-color: #83C5BE;
-  margin-right: 100px;
-  margin-top: -350px;
-  float: right;
+  display: block;
+  width: 500px;
+  height: 313px;
+  margin-top: auto;
+  margin-bottom: auto;
+  padding: 0 5rem 0 0;
+  background-color: #83c5be;
   border: none;
 }
 
 /* Carrossel */
 
 .d-block {
-  margin-left: 24rem;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
   padding-bottom: 4rem;
 }
 
 /*FAIXA ROSA COM LINK*/
 
 .section {
-
-  width: 1520px;
+  width: 100%;
   height: 100px;
   left: 0px;
   align-items: center;
   display: flex;
   justify-content: center;
-
-  background: #FFDDD2;
+  background: #ffddd2;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
-
-
 .section p {
-
-  font-family: 'Poppins';
-  font-style: normal;
   font-weight: 600;
   font-size: 28px;
   line-height: 48px;
   letter-spacing: 0.05em;
-
-  color: #006D77;
-
+  color: #006d77;
 }
 
 .section a {
-
-  font-family: 'Poppins';
-  font-style: normal;
   font-weight: 600;
   font-size: 28px;
   line-height: 48px;
   letter-spacing: 0.05em;
   text-decoration: none;
-
-  color: #EF7649;
-  ;
-
+  color: #ef7649;
 }

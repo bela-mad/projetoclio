@@ -2,80 +2,77 @@
   <app-nav-bar></app-nav-bar>
 
   <div class="img-museu">
-    <img src = "{{museu.urlFoto}}" alt="" />
+    <img src="{{ museu.urlFoto }}" alt="" />
   </div>
+
+  <button class="button-alterar-museu">
+    <a href="alterar-museus/:id">ALTERAR MUSEU</a>
+  </button>
 
   <h1 class="nome-museu">{{ museu.nome }}</h1>
 
   <img class="estrela-nota" src="{{imagemNota}}" alt="" />
 
   <div class="descricao">
-    <p>{{ museu.descricaoMuseu }}</p>
+    <p class="text-descricao">{{ museu.descricaoMuseu }}</p>
   </div>
 
   <div class="linha"></div>
 
-  <h3>HORÁRIOS DE FUNCIONAMENTO</h3>
+  <h3 class="titulo-h3">HORÁRIOS DE FUNCIONAMENTO</h3>
 
   <div class="funcionamento">
-    <p>{{ museu.funcionamentoMuseu }}</p>
+    <p class="text-museu">{{ museu.funcionamentoMuseu }}</p>
   </div>
 
   <div class="linha"></div>
 
-  <h3>ENDEREÇO</h3>
+  <h3 class="titulo-h3">ENDEREÇO</h3>
 
   <div class="endereco">
-    <p>
+    <p class="text-museu">
       {{ museu.endereco.rua }}, {{ museu.endereco.numero }} -
       {{ museu.endereco.bairro }}, {{ museu.endereco.estado }},
       {{ museu.endereco.pais }}
     </p>
-    <br />
-    <p>{{ museu.endereco.cep }}</p>
+    <p class="text-museu">{{ museu.endereco.cep }}</p>
   </div>
 
   <div class="linha"></div>
 
-  <h3>MAIS INFORMAÇÕES</h3>
+  <h3 class="titulo-h3">MAIS INFORMAÇÕES</h3>
 
   <div class="mais-informacoes">
     <img class="img1" src="assets/site_icone_branco.png" alt="" />
-    <p class="p1">{{museu.urlSite}}</p>
+    <p class="mais-info-site">
+      <a href="http://{{ museu.urlSite }}">{{ museu.urlSite }}</a>
+    </p>
     <img class="img2" src="assets/instagram_branco.png" alt="" />
-    <p class="p2">{{museu.urlInstagram}}</p>
+    <p class="mais-info-insta">
+      <a href="http://{{ museu.urlInstagram }}">{{ museu.urlInstagram }}</a>
+    </p>
   </div>
 
   <div class="linha"></div>
 
-  <!-- <div class="estrela-avaliacao">{{ avaliacao }}</div>-->
   <input
-  class="avaliacao"
-  type="number"
-  placeholder="Digite sua nota"
-  [(ngModel)]= "avaliacao.nota"
-  style="
-    font-family: Poppins;
-    font-size: 15px;
-    padding-left: 10px;
-    padding-top: -100px;
-  "
-/> 
+    class="avaliacao-nota"
+    type="number"
+    placeholder="Digite sua nota de 1 a 5 para esse museu"
+    [(ngModel)]="avaliacao.nota"
+    min="1"
+    max="5"
+  />
 
-  <input
-    class="avaliacao"
+  <textarea
+    class="avaliacao-text"
     type="text"
-    placeholder=""
-    [(ngModel)]= "avaliacao.avaliacao"
-    style="
-      font-family: Poppins;
-      font-size: 15px;
-      padding-left: 10px;
-      padding-top: -100px;
-    "
-  /> 
+    placeholder="Digite a sua avaliação em até 300 caracteres"
+    [(ngModel)]="avaliacao.avaliacao"
+  >
+  </textarea>
 
-  <button (click) = createAvaliacao()>AVALIAR</button>
+  <button class="avaliar" (click)="createAvaliacao()">AVALIAR</button>
 
   <form class="comentarios">
     <h3 class="title">COMENTÁRIOS</h3>
@@ -86,15 +83,13 @@
         <img *ngIf="item.nota === 3" class="img-box-moderacao column" src="assets/estrelas_avaliacao_3.png" alt="" />
         <img *ngIf="item.nota === 4" class="img-box-moderacao column" src="assets/estrelas_avaliacao_4.png" alt="" />
         <img *ngIf="item.nota === 5" class="img-box-moderacao column" src="assets/estrelas_avaliacao_5.png" alt="" />
-        
+
         <p class="text-box-moderacao">
-          {{item.avaliacao}}
+          {{ item.avaliacao }}
         </p>
       </div>
     </div>
   </form>
-
-
 
   <app-footer></app-footer>
 </div>

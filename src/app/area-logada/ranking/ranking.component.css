@@ -13,40 +13,42 @@
   font-size: 48px;
   line-height: 72px;
   font-weight: 800;
-  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  color: white;
   margin: 0;
   padding-top: 8%;
   padding-bottom: 6%;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  color: white;
 }
 
 .img-ranking {
   width: 870px;
   height: 780px;
-  margin-left: 240px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
   margin-bottom: 75px;
 }
 
 /* Faixa de chamada para ação */
 
 .chamada-acao {
-    background-color: #ffddd2;
-    font-family: "Poppins", sans-serif;
-    font-size: 25px;
-    text-align: center;
-  }
-  
-  .chamada-acao p {
-    text-align: center;
-    font-weight: 600;
-    line-height: 48px;
-    letter-spacing: 0.05em;
-    margin: 0;
-    padding: 25px 0;
-    color: #006d77;
-  }
-  
-  .chamada-acao p a {
-    color: #ef7649;
-    text-decoration: none;
-  }
+  background-color: #ffddd2;
+  font-family: "Poppins", sans-serif;
+  font-size: 25px;
+  text-align: center;
+}
+
+.chamada-acao p {
+  text-align: center;
+  font-weight: 600;
+  line-height: 48px;
+  letter-spacing: 0.05em;
+  margin: 0;
+  padding: 25px 0;
+  color: #006d77;
+}
+
+.chamada-acao p a {
+  color: #ef7649;
+  text-decoration: none;
+}
