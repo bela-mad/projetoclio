@@ -5,9 +5,12 @@
     <img src="{{ museu.urlFoto }}" alt="Imagem do museu" />
   </div>
 
-  <button class="button-alterar-museu">
-    <a href="alterar-museus/:id">ALTERAR MUSEU</a>
-  </button>
+  <div *ngIf="perfilAdmnistrativo()" >
+    <button class="button-alterar-museu">
+      <a [routerLink]="['/alterar-museus',museu.id]">ALTERAR MUSEU</a>
+    </button>
+  </div>
+  
 
   <h1 class="nome-museu">{{ museu.nome }}</h1>
 
