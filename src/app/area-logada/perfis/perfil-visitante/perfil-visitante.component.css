@@ -163,22 +163,22 @@ div a {
 }
 
 .img-box-moderacao {
-  width: 140px;
-  height: 30px;
+  width: 180px;
+  height: 33px;
   margin-right: auto;
-  margin-bottom: 10px;
+  margin-bottom: 1rem;
 }
 
 .editar {
-  width: 35px;
-  height: 35px;
+  width: 30px;
+  height: 30px;
   margin-left: auto;
 }
 
 .lixeira {
   width: 35px;
   height: 35px;
-  margin-left: auto;
+  margin-left: 11px;
 }
 
 .text-box-moderacao {

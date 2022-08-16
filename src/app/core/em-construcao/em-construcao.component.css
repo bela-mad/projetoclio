@@ -3,9 +3,8 @@
 }
 
 img {
-  margin-top: 4rem;
-  margin-left: 36rem;
-  margin-bottom: 4rem;
+  display: block;
+  margin: 4rem auto;
 }
 
 h1 {
