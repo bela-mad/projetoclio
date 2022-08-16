@@ -173,12 +173,14 @@ div a {
   width: 30px;
   height: 30px;
   margin-left: auto;
+  cursor: pointer;
 }
 
 .lixeira {
   width: 35px;
   height: 35px;
   margin-left: 11px;
+  cursor: pointer;
 }
 
 .text-box-moderacao {
