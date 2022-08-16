@@ -9,6 +9,7 @@
   width: 100%;
   height: 400px;
   object-fit: cover;
+  object-position: 40% 80%;
 }
 
 .button-alterar-museu {
@@ -131,7 +132,7 @@
 
 .avaliacao-nota {
   display: block;
-  width: 800px;
+  width: 370px;
   height: 50px;
   background: rgba(233, 246, 250, 0.23);
   border: none;
@@ -153,15 +154,21 @@
   padding: 20px 30px 20px 30px;
 }
 
+.avaliacao-text:focus {
+  outline: none;
+}
+
 /* width */
 ::-webkit-scrollbar {
   width: 15px;
+  padding-right: 50px;
+  scroll-padding: 50px 0 0 50px;
 }
 
 /* Track */
 ::-webkit-scrollbar-track {
   border-radius: 10px;
-  box-shadow: inset 0 0 5px grey;
+  border: solid 1px rgba(233, 246, 250, 0.23);
 }
 
 /* Handle */
@@ -217,7 +224,7 @@
   letter-spacing: 0.1em;
   margin-left: 2.5rem;
   padding-top: 40px;
-  padding-bottom: 10px;
+  padding-bottom: 40px;
   color: #ffffff;
 }
 

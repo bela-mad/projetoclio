@@ -46,7 +46,7 @@ div a {
   position: absolute;
   left: 325px;
   top: 240px;
-  font-family: "Courier Prime";
+  font-family: "courierPrime", sans-serif;
   font-weight: 700;
   font-size: 26px;
   line-height: 36px;
