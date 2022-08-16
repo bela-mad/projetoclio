@@ -1,165 +1,145 @@
 .alterar-museu {
-    width: 100%;
-    position: relative;
-    font-family: "Poppins", sans-serif;
-    background-color: #83c5be;
-  }
-  
-  /* Título da página */
-  
-  .title {
-    text-align: center;
-    letter-spacing: 0.05em;
-    font-size: 42px;
-    line-height: 72px;
-    font-weight: 800;
-    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    color: white;
-    margin: 0;
-    padding-top: 11.6rem;
-    padding-bottom: 3.25rem;
-    text-shadow: black;
-  }
-  
-  /* Formulário de cadastro de museus */
-  
-  .column > label {
-    text-align: center;
-    font-style: italic;
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 42px;
-    letter-spacing: 0.05em;
-    padding-left: 9.7rem;
-    margin-top: 10px;
-    color: #ffffff;
-  }
-  
-  .column > input {
-    width: 1140px;
-    height: 40px;
-    margin-left: 9.7rem;
-    margin-bottom: 2rem;
-    background: #ffffff;
-    border: 1px solid #747474;
-    border-radius: 15px;
-  }
-  
-  .text-formato {
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 33px;
-    letter-spacing: 0.05em;
-    margin-top: -2.5rem;
-    margin-bottom: 2rem;
-    padding-left: 9.7rem;
-    color: #ffffff;
-  }
-  
-  .text-h2 {
-    font-style: italic;
-    font-weight: 700;
-    font-size: 28px;
-    line-height: 42px;
-    letter-spacing: 0.05em;
-    margin-bottom: 22px;
-    padding-left: 9.7rem;
-    color: #ffffff;
-  }
-  
-  .row {
-    margin-left: 3.2rem;
-    padding: 0;
-  }
-  
-  .row input {
-    width: 520px;
-    height: 40px;
-    margin-left: 6.5rem;
-    margin-bottom: 2rem;
-    background: #ffffff;
-    border: 1px solid #747474;
-    border-radius: 15px;
-  }
-  
-  .row label {
-    font-style: italic;
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 36px;
-    letter-spacing: 0.05em;
-    margin-left: 6.5rem;
-    padding: 0;
-    color: #ffffff;
-  }
-  
-  .botao-limpar {
-    width: 150px;
-    height: 52px;
-    font-weight: 600;
-    font-size: 22px;
-    line-height: 42px;
-    letter-spacing: 0.05em;
-    background: #ffffff;
-    margin: 2rem 0 4rem 67.8rem;
-    color: #000000;
-    border: 0;
-    border-radius: 15px;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  }
-  
-  .botao-submeter {
-    float: right;
-    width: 150px;
-    height: 52px;
-    font-weight: 600;
-    font-size: 22px;
-    line-height: 42px;
-    letter-spacing: 0.05em;
-    margin: 2rem 6.9rem 4rem 1.5rem;
-    background: #ef7649;
-    color: #ffffff;
-    border: 0;
-    border-radius: 15px;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  }
-  
-  /*FAIXA ROSA COM LINK*/
-
-.section {
-
-    width: 1520px;
-    height: 100px;
-    left: 0px;
-    align-items: center;
-    display: flex;
-    justify-content: center;
-
-    background: #FFDDD2;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  width: 100%;
+  position: relative;
+  font-family: "Poppins", sans-serif;
+  background-color: #83c5be;
 }
 
+/* Título da página */
 
+.title {
+  text-align: center;
+  letter-spacing: 0.05em;
+  font-size: 42px;
+  line-height: 72px;
+  font-weight: 800;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  color: white;
+  margin: 0;
+  padding-top: 100px;
+  padding-bottom: 60px;
+  text-shadow: black;
+}
+
+/* Formulário de cadastro de museus */
+
+.column > label {
+  text-align: center;
+  font-style: italic;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 42px;
+  letter-spacing: 0.05em;
+  padding-left: 9.7rem;
+  margin-top: 10px;
+  color: #ffffff;
+}
+
+.column > input {
+  width: 1050px;
+  height: 50px;
+  margin-left: 9.7rem;
+  margin-bottom: 2rem;
+  background: #ffffff;
+  border: 1px solid #747474;
+  border-radius: 15px;
+}
+
+.text-formato {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 33px;
+  letter-spacing: 0.05em;
+  margin-top: -1.5rem;
+  margin-bottom: 2rem;
+  padding-left: 9.7rem;
+  color: #ffffff;
+}
+
+.text-h2 {
+  font-style: italic;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 42px;
+  letter-spacing: 0.05em;
+  margin-bottom: 22px;
+  padding-left: 9.7rem;
+  color: #ffffff;
+}
+
+.row {
+  margin: 0;
+  padding: 0;
+}
+
+.row input {
+  width: 500px;
+  height: 50px;
+  margin-left: 9.7rem;
+  margin-bottom: 2rem;
+  background: #ffffff;
+  border: 1px solid #747474;
+  border-radius: 15px;
+}
+
+.row label {
+  font-style: italic;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 36px;
+  letter-spacing: 0.05em;
+  margin-left: 9.7rem;
+  padding: 0;
+  color: #ffffff;
+}
+
+.column2 {
+  margin-top: 0.6rem;
+  margin-left: -6.5rem;
+}
+
+.botao-submeter {
+  float: right;
+  width: 150px;
+  height: 52px;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 42px;
+  letter-spacing: 0.05em;
+  margin: 2rem 9.5rem 4rem 1.5rem;
+  background: #ef7649;
+  color: #ffffff;
+  border: 0;
+  border-radius: 15px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+/*FAIXA ROSA COM LINK*/
+
+.section {
+  display: flex;
+  width: 100%;
+  height: 80px;
+  background: #ffddd2;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
 
 .section p {
-    font-style: normal;
-    font-weight: 600;
-    font-size: 28px;
-    line-height: 48px;
-    letter-spacing: 0.05em;
-
-    color: #006D77;
-
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 48px;
+  letter-spacing: 0.05em;
+  margin: 0;
+  color: #006d77;
 }
 
 .section a {
-    font-style: normal;
-    font-weight: 600;
-    font-size: 28px;
-    line-height: 48px;
-    letter-spacing: 0.05em;
-    text-decoration: none;
-    color: #EF7649;
-    ;
-
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 48px;
+  letter-spacing: 0.05em;
+  margin: 0;
+  color: #ef7649;
 }
