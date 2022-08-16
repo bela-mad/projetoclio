@@ -78,7 +78,7 @@ export class PerfilVisitanteComponent implements OnInit {
           map.forEach((value, key) => {
             const avaliacoes: AvaliacaoDto[] = JSON.parse(JSON.stringify(value));
 
-            this.listaAvaliacoes = avaliacoes
+            this.listaAvaliacoes.push(...avaliacoes)
           })
         }
       },
