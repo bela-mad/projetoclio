@@ -10,14 +10,15 @@
 .heading-cadastro-museu {
   text-align: center;
   letter-spacing: 0.05em;
-  font-size: 48px;
+  font-size: 42px;
   line-height: 72px;
   font-weight: 800;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   color: white;
   margin: 0;
-  padding-top: 8%;
-  padding-bottom: 6%;
+  padding-top: 100px;
+  padding-bottom: 60px;
+  text-shadow: black;
 }
 
 /* Formulário de cadastro de museus */
@@ -26,20 +27,19 @@
   text-align: center;
   font-style: italic;
   font-weight: 700;
-  font-size: 23px;
+  font-size: 20px;
   line-height: 42px;
   letter-spacing: 0.05em;
-  padding-left: 6.7rem;
+  padding-left: 9.7rem;
+  margin-top: 10px;
   color: #ffffff;
 }
 
 .column > input {
-  width: 1140px;
-  height: 67px;
-  font-size: 18px;
-  margin-left: 6.7rem;
+  width: 1050px;
+  height: 50px;
+  margin-left: 9.7rem;
   margin-bottom: 2rem;
-  padding-left: 1rem;
   background: #ffffff;
   border: 1px solid #747474;
   border-radius: 15px;
@@ -52,7 +52,7 @@
   letter-spacing: 0.05em;
   margin-top: -1.5rem;
   margin-bottom: 2rem;
-  padding-left: 6.7rem;
+  padding-left: 9.7rem;
   color: #ffffff;
 }
 
@@ -63,19 +63,19 @@
   line-height: 42px;
   letter-spacing: 0.05em;
   margin-bottom: 22px;
-  padding-left: 6.7rem;
+  padding-left: 9.7rem;
   color: #ffffff;
 }
 
 .row {
-  margin-left: 3.2rem;
+  margin: 0;
   padding: 0;
 }
 
 .row input {
-  width: 541px;
-  height: 67px;
-  margin-left: 3.5rem;
+  width: 500px;
+  height: 50px;
+  margin-left: 9.7rem;
   margin-bottom: 2rem;
   background: #ffffff;
   border: 1px solid #747474;
@@ -88,20 +88,25 @@
   font-size: 24px;
   line-height: 36px;
   letter-spacing: 0.05em;
-  margin-left: 3.5rem;
+  margin-left: 9.7rem;
   padding: 0;
   color: #ffffff;
 }
 
+.column2 {
+  margin-top: 0.6rem;
+  margin-left: -6.5rem;
+}
+
 .botao-limpar {
-  width: 224px;
-  height: 82px;
+  width: 150px;
+  height: 52px;
   font-weight: 600;
-  font-size: 23px;
+  font-size: 22px;
   line-height: 42px;
   letter-spacing: 0.05em;
   background: #ffffff;
-  margin: 2rem 0 4rem 46.8rem;
+  margin: 2rem 0 4rem 55rem;
   color: #000000;
   border: 0;
   border-radius: 15px;
@@ -110,13 +115,13 @@
 
 .botao-submeter {
   float: right;
-  width: 224px;
-  height: 82px;
+  width: 150px;
+  height: 52px;
   font-weight: 600;
-  font-size: 23px;
+  font-size: 22px;
   line-height: 42px;
   letter-spacing: 0.05em;
-  margin: 2rem 6.5rem 4rem 1.5rem;
+  margin: 2rem 9.5rem 4rem 1rem;
   background: #ef7649;
   color: #ffffff;
   border: 0;
@@ -127,23 +132,29 @@
 /* Faixa de chamada para ação */
 
 .chamada-acao {
-  background-color: #ffddd2;
-  font-family: "Poppins", sans-serif;
-  font-size: 25px;
-  text-align: center;
+  display: flex;
+  width: 100%;
+  height: 80px;
+  background: #ffddd2;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .chamada-acao p {
-  text-align: center;
   font-weight: 600;
+  font-size: 20px;
   line-height: 48px;
   letter-spacing: 0.05em;
   margin: 0;
-  padding: 25px 0;
   color: #006d77;
 }
 
 .chamada-acao p a {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 48px;
+  letter-spacing: 0.05em;
+  margin: 0;
   color: #ef7649;
-  text-decoration: none;
 }

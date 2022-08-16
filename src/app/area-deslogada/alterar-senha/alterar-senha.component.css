@@ -19,7 +19,7 @@
 
 .container {
   width: 400px;
-  height: 480px;
+  height: 430px;
   margin-top: 10px;
   display: block;
   margin-left: auto;
@@ -35,8 +35,9 @@
   letter-spacing: 0.05em;
   text-align: center;
   color: #07889b;
-  margin-bottom: 50px;
   margin-top: 10px;
+  padding-top: 20px;
+  padding-bottom: 10px;
   font-weight: 800;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
@@ -70,7 +71,6 @@ button {
   height: 45px;
   left: 474px;
   top: 1098px;
-
   background: #ef7649;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 10px;
@@ -83,7 +83,6 @@ button {
 }
 
 .link {
-  font-style: normal;
   margin-top: -15px;
   font-size: 14px;
   text-align: center;

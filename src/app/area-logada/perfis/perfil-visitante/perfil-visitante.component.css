@@ -1,5 +1,6 @@
 .perfil-visitante {
   background-color: #83c5be;
+  font-family: "Poppins", sans-serif;
   position: relative;
 }
 
@@ -7,14 +8,13 @@
 
 .title1 {
   position: static;
-  font-family: "Poppins", sans-serif;
   text-align: center;
   font-weight: 800;
   font-size: 42px;
   line-height: 72px;
   margin: 0;
-  padding-top: 8%;
-  padding-bottom: 100px;
+  padding-top: 100px;
+  padding-bottom: 60px;
   color: #ffffff;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
@@ -36,8 +36,8 @@
   position: absolute;
   width: 170px;
   height: 170px;
-  left: 340px;
-  top: 40px;
+  left: 330px;
+  top: 70px;
 }
 
 div a {
@@ -48,8 +48,8 @@ div a {
 .list {
   position: absolute;
   left: 305px;
-  top: 230px;
-  font-family: "Courier Prime";
+  top: 260px;
+  font-family: "courierPrime", sans-serif;
   font-weight: 700;
   font-size: 26px;
   line-height: 36px;
@@ -64,13 +64,12 @@ div a {
 /*COMENTÁRIOS PERFIL-VISITANTE*/
 
 .title2 {
-  position: static;
-  font-family: "Poppins", sans-serif;
   text-align: center;
   font-weight: 800;
   font-size: 42px;
   line-height: 72px;
-  padding-bottom: 25px;
+  margin-top: 170px;
+  padding-bottom: 20px;
   color: #ffffff;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
@@ -80,7 +79,6 @@ div a {
 /* Style The Dropdown Button */
 .dropbtn {
   background-color: #9ad0cb;
-  font-family: "Poppins", sans-serif;
   font-size: 16px;
   font-weight: 700;
   letter-spacing: 0.05em;
@@ -116,7 +114,6 @@ div a {
 /* Links inside the dropdown */
 .dropdown-content a {
   display: block;
-  font-family: "Poppins", sans-serif;
   font-size: 12px;
   text-decoration: none;
   padding: 12px 16px;
@@ -154,8 +151,8 @@ div a {
   background-color: #9ad0cb;
   margin-top: 48px;
   margin-left: 125px;
-  margin-bottom: 100px;
-  padding: 40px 50px 50px 50px;
+  margin-bottom: 50px;
+  padding: 40px 50px 40px 50px;
   border-radius: 30px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
@@ -169,7 +166,13 @@ div a {
   width: 140px;
   height: 30px;
   margin-right: auto;
-  margin-bottom: 1rem;
+  margin-bottom: 10px;
+}
+
+.editar {
+  width: 35px;
+  height: 35px;
+  margin-left: auto;
 }
 
 .lixeira {
@@ -201,8 +204,8 @@ div a {
 
 .section {
   display: flex;
-  width: 1520px;
-  height: 100px;
+  width: 100%;
+  height: 80px;
   background: #ffddd2;
   align-items: center;
   justify-content: center;
@@ -211,19 +214,19 @@ div a {
 }
 
 .section p {
-  font-family: "Poppins", sans-serif;
   font-weight: 600;
-  font-size: 28px;
+  font-size: 20px;
   line-height: 48px;
   letter-spacing: 0.05em;
+  margin: 0;
   color: #006d77;
 }
 
 .section a {
-  font-family: "Poppins", sans-serif;
   font-weight: 600;
-  font-size: 28px;
+  font-size: 20px;
   line-height: 48px;
   letter-spacing: 0.05em;
+  margin: 0;
   color: #ef7649;
 }
