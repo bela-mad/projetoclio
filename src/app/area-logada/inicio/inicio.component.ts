@@ -1,3 +1,5 @@
+import { Router } from '@angular/router';
+import { TokenStorageService } from 'src/app/core/services/token.storage.service';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -7,9 +9,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class InicioComponent implements OnInit {
 
-  constructor() { }
+  constructor(private tokenService: TokenStorageService, private route: Router) { }
 
   ngOnInit() {
+    if(!this.tokenService.getToken() || this.tokenService.getToken() === ''){
+      this.route.navigate([''])
+    }
   }
 
 }
