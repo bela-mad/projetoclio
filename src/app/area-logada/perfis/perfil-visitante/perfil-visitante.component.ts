@@ -27,6 +27,7 @@ export class PerfilVisitanteComponent implements OnInit {
 
   ngOnInit() {
     this.listarTodosMuseus()
+    this.buscarTodasAvaliacoes()
   }
 
   listarTodosMuseus(){
@@ -58,6 +59,26 @@ export class PerfilVisitanteComponent implements OnInit {
               this.listaAvaliacoes = avaliacoes
               return
             }
+          })
+        }
+      },
+      error: (e) => console.error(e)
+    });
+    
+  }
+
+  buscarTodasAvaliacoes(){
+    this.listaAvaliacoes = []
+
+    this.avaliacaoService.getAvaliacoesUsuario(this.tokenStorage.getUserId(), this.tokenStorage.getToken())
+    .subscribe({
+      next: (data: CollectionModelAvaliacaoDto) => {
+        if(data){
+          const map = new Map(Object.entries(data));
+          map.forEach((value, key) => {
+            const avaliacoes: AvaliacaoDto[] = JSON.parse(JSON.stringify(value));
+
+            this.listaAvaliacoes = avaliacoes
           })
         }
       },

@@ -119,4 +119,14 @@ export class DetalhesMuseuComponent implements OnInit {
         error: (e) => console.error(e)
       })
   }
+
+  perfilAdmnistrativo() : boolean{
+    var emailUsuarioLogado: string = this.tokenStorage.getUserEmail()
+
+    if(emailUsuarioLogado == "admin@email.com"){
+      return true
+    }else{
+      return false
+    }
+  }
 }

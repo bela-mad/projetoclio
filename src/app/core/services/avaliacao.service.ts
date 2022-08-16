@@ -32,6 +32,15 @@ export class AvaliacaoService {
     return this.http.get(urlCompleta, {headers: reqHeader});
   }
 
+  getTodasAvaliacoes(token:any):Observable<any>{
+    var urlCompleta = baseUrl
+    var reqHeader = new HttpHeaders({ 
+      'Content-Type': 'application/json',
+      'Authorization': 'Bearer ' + token
+    });
+    return this.http.get(urlCompleta, {headers: reqHeader});
+  }
+
   getAvaliacoesUsuario(idVisitante:any, token:any):Observable<CollectionModelAvaliacaoDto>{
     var urlCompleta = baseUrl + "/doVisitante/" + idVisitante
     var reqHeader = new HttpHeaders({ 

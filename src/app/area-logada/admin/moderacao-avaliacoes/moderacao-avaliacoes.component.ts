@@ -27,7 +27,18 @@ export class ModeracaoAvaliacoesComponent implements OnInit {
 
   ngOnInit() {
     this.listarTodosMuseus()
+    this.listarTodasAvaliacoes()
     this.listarTodasDenunciadas()
+  }
+
+  listarTodasAvaliacoes(){
+    this.avaliacaoService.getTodasAvaliacoes(this.tokenStorage.getToken())
+      .subscribe({
+        next: (data) => {
+          this.listaAvaliacoes = data._embedded.avaliacaoDtoList
+        },
+        error: (e) => console.error(e)
+      });
   }
 
   listarTodosMuseus(){
