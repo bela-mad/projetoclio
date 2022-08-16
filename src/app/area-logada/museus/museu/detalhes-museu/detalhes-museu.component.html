@@ -2,7 +2,7 @@
   <app-nav-bar></app-nav-bar>
 
   <div class="img-museu">
-    <img src="{{ museu.urlFoto }}" alt="" />
+    <img src="{{ museu.urlFoto }}" alt="Imagem do museu" />
   </div>
 
   <button class="button-alterar-museu">
@@ -11,7 +11,7 @@
 
   <h1 class="nome-museu">{{ museu.nome }}</h1>
 
-  <img class="estrela-nota" src="{{imagemNota}}" alt="" />
+  <img class="estrela-nota" src="{{ imagemNota }}" alt="Nota média do Museu" />
 
   <div class="descricao">
     <p class="text-descricao">{{ museu.descricaoMuseu }}</p>
@@ -78,11 +78,37 @@
     <h3 class="title">COMENTÁRIOS</h3>
     <div *ngFor="let item of listaAvaliacoes" class="row">
       <div class="row">
-        <img *ngIf="item.nota === 1" class="img-box-moderacao column" src="assets/estrelas_avaliacao_1.png" alt="" />
-        <img *ngIf="item.nota === 2" class="img-box-moderacao column" src="assets/estrelas_avaliacao_2.png" alt="" />
-        <img *ngIf="item.nota === 3" class="img-box-moderacao column" src="assets/estrelas_avaliacao_3.png" alt="" />
-        <img *ngIf="item.nota === 4" class="img-box-moderacao column" src="assets/estrelas_avaliacao_4.png" alt="" />
-        <img *ngIf="item.nota === 5" class="img-box-moderacao column" src="assets/estrelas_avaliacao_5.png" alt="" />
+        <img
+          *ngIf="item.nota === 1"
+          class="img-box-moderacao column"
+          src="assets/estrelas_avaliacao_1.png"
+          alt=""
+        />
+        <img
+          *ngIf="item.nota === 2"
+          class="img-box-moderacao column"
+          src="assets/estrelas_avaliacao_2.png"
+          alt=""
+        />
+        <img
+          *ngIf="item.nota === 3"
+          class="img-box-moderacao column"
+          src="assets/estrelas_avaliacao_3.png"
+          alt=""
+        />
+        <img
+          *ngIf="item.nota === 4"
+          class="img-box-moderacao column"
+          src="assets/estrelas_avaliacao_4.png"
+          alt=""
+        />
+        <img
+          *ngIf="item.nota === 5"
+          class="img-box-moderacao column"
+          src="assets/estrelas_avaliacao_5.png"
+          alt=""
+        />
+        <img class="botao-denunciar" src="assets/denunciar-2.png" alt="Botão para denunciar avaliação">
 
         <p class="text-box-moderacao">
           {{ item.avaliacao }}

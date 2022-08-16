@@ -6,7 +6,11 @@
   <div class="dropdown">
     <button class="dropbtn">MUSEUS 🡫</button>
     <div class="dropdown-content">
-      <a *ngFor="let i of listaMuseus" (click)="buscarInformacoesMuseuSelecionado(i)">{{ i.nome }}</a>
+      <a
+        *ngFor="let i of listaMuseus"
+        (click)="buscarInformacoesMuseuSelecionado(i)"
+        >{{ i.nome }}</a
+      >
     </div>
   </div>
 
@@ -14,15 +18,40 @@
     <h2 class="heading-box-moderacao">COMENTÁRIOS</h2>
     <div *ngFor="let item of listaAvaliacoes" class="row">
       <div class="row">
-        <img *ngIf="item.nota === 1" class="img-box-moderacao column" src="assets/estrelas_avaliacao_1.png" alt="" />
-        <img *ngIf="item.nota === 2" class="img-box-moderacao column" src="assets/estrelas_avaliacao_2.png" alt="" />
-        <img *ngIf="item.nota === 3" class="img-box-moderacao column" src="assets/estrelas_avaliacao_3.png" alt="" />
-        <img *ngIf="item.nota === 4" class="img-box-moderacao column" src="assets/estrelas_avaliacao_4.png" alt="" />
-        <img *ngIf="item.nota === 5" class="img-box-moderacao column" src="assets/estrelas_avaliacao_5.png" alt="" />
+        <img
+          *ngIf="item.nota === 1"
+          class="img-box-moderacao column"
+          src="assets/estrelas_avaliacao_1.png"
+          alt=""
+        />
+        <img
+          *ngIf="item.nota === 2"
+          class="img-box-moderacao column"
+          src="assets/estrelas_avaliacao_2.png"
+          alt=""
+        />
+        <img
+          *ngIf="item.nota === 3"
+          class="img-box-moderacao column"
+          src="assets/estrelas_avaliacao_3.png"
+          alt=""
+        />
+        <img
+          *ngIf="item.nota === 4"
+          class="img-box-moderacao column"
+          src="assets/estrelas_avaliacao_4.png"
+          alt=""
+        />
+        <img
+          *ngIf="item.nota === 5"
+          class="img-box-moderacao column"
+          src="assets/estrelas_avaliacao_5.png"
+          alt=""
+        />
+        <input type="image" src="assets/deletar_icone.png" class="lixeira" />
         <p class="text-box-moderacao">
-          {{item.avaliacao}}
+          {{ item.avaliacao }}
         </p>
-        <input type="image" src="assets/deletar_icone.png"  class="lixeira"/>
       </div>
     </div>
   </form>
@@ -33,18 +62,42 @@
     <h2 class="heading-box-moderacao">COMENTÁRIOS</h2>
     <div *ngFor="let item of listaDenunciadas" class="row">
       <div class="row">
-        <img *ngIf="item.nota === 1" class="img-box-moderacao column" src="assets/estrelas_avaliacao_1.png" alt="" />
-        <img *ngIf="item.nota === 2" class="img-box-moderacao column" src="assets/estrelas_avaliacao_2.png" alt="" />
-        <img *ngIf="item.nota === 3" class="img-box-moderacao column" src="assets/estrelas_avaliacao_3.png" alt="" />
-        <img *ngIf="item.nota === 4" class="img-box-moderacao column" src="assets/estrelas_avaliacao_4.png" alt="" />
-        <img *ngIf="item.nota === 5" class="img-box-moderacao column" src="assets/estrelas_avaliacao_5.png" alt="" />
+        <img
+          *ngIf="item.nota === 1"
+          class="img-box-moderacao column"
+          src="assets/estrelas_avaliacao_1.png"
+          alt=""
+        />
+        <img
+          *ngIf="item.nota === 2"
+          class="img-box-moderacao column"
+          src="assets/estrelas_avaliacao_2.png"
+          alt=""
+        />
+        <img
+          *ngIf="item.nota === 3"
+          class="img-box-moderacao column"
+          src="assets/estrelas_avaliacao_3.png"
+          alt=""
+        />
+        <img
+          *ngIf="item.nota === 4"
+          class="img-box-moderacao column"
+          src="assets/estrelas_avaliacao_4.png"
+          alt=""
+        />
+        <img
+          *ngIf="item.nota === 5"
+          class="img-box-moderacao column"
+          src="assets/estrelas_avaliacao_5.png"
+          alt=""
+        />
+        <input type="image" src="assets/deletar_icone.png" class="lixeira" />
         <p class="text-box-moderacao">
-          {{item.avaliacao}}
+          {{ item.avaliacao }}
         </p>
-        <input type="image" src="assets/deletar_icone.png"  class="lixeira"/>
       </div>
     </div>
-    
   </form>
 
   <app-footer></app-footer>
