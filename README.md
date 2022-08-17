@@ -483,7 +483,7 @@ Diagramas elaborados no Miro:
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.0.6.
   
-Para acessar o repositório e compilar o projeto, basta instalar o NodeJs e o Angular CLI nos seus sites oficiais, clonar o repositório da forma que preferir e utilizar um editor de codigo fonte para abrir o projeto e compilar com o comando "ng serve" ou "npm start".
+Para acessar o projeto, basta instalar o NodeJs e o Angular CLI, a partir de seus sites oficiais, clonar o repositório da forma que preferir e utilizar um editor de codigo fonte para abrir o projeto e compilar com o comando "ng serve" ou "npm start".
 
 ## Development server
 
